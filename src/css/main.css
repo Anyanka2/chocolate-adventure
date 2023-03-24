@@ -5,6 +5,7 @@
 
 /*components*/
 @import url('./components/buttons.css');
+@import url('./components/modals.css');
 
 /*layout*/
 @import url('./layout/header.css');
