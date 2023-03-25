@@ -28,11 +28,25 @@
     <h2 class="tittle-how-its-made">how it’s <span class="tittle-how-its-made-second-part">made</span></h2>
     <div class="process">
       <div class="process-video">
-        <img 
-        src="/chocolate-adventure/assets/process-desktop-2e047477.jpg" 
-        alt="making-chocolate" 
-        width="600" 
-        height="400">
+        <picture> 
+        <source 
+          srcset="
+          ../img/how-its-made/process-desktop.jpg 1x, 
+          ../img/how-its-made/process-desktop@2x.jpg 2x" 
+          media="(min-width: 1200px)" />          
+        <source 
+          srcset="
+          ../img/how-its-made/process-tablet.jpg 1x,
+          ../img/how-its-made/process-tablet@2x.jpg 2x"
+          media="(min-width: 768px)"/>
+        <source 
+          srcset="
+          ../img/how-its-made/process-mobile.jpg 1x,
+          ../img/how-its-made/process-mobile@2x.jpg 2x" 
+          media="(max-width: 768px)" />
+          <img src="../img/how-its-made/process-desktop.jpg" alt="making-chocolate">
+        </picture>
+        
         <button class="play-btn" type="button">
           <svg class="play-icon" width="20" height="21">
             <use href="">
