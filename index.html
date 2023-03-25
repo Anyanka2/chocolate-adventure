@@ -75,66 +75,81 @@
   </div>
 </section>
       
-      <section>
-  <h2>top sellers</h2>
-  <ul>
-    <li>
-      <picture>
-        <source
-          srcset="/chocolate-adventure/assets/top-seller-1-desktop@2x-36ce1883.jpg 2x, /chocolate-adventure/assets/top-seller-1-desktop-003d484c.jpg 1x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="/chocolate-adventure/assets/top-seller-1-tablet@2x-3b41f556.jpg 2x, /chocolate-adventure/assets/top-seller-1-tablet-798a2ef1.jpg 1x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/chocolate-adventure/assets/top-seller-1-mobile@2x-e06e7104.jpg 2x, /chocolate-adventure/assets/top-seller-1-mobile-26b5cc5b.jpg 1x"
-          media="(min-width: 375px)"
-        />
-        <img
-          src="/chocolate-adventure/assets/top-seller-1-mobile-26b5cc5b.jpg"
-          alt="pieces of chocolate stacked on top of each other"
-        />
-      </picture>
-    </li>
-    <li>
-      <picture>
-        <source
-          srcset="/chocolate-adventure/assets/top-seller-2-desktop@2x-32d00a91.jpg 2x, /chocolate-adventure/assets/top-seller-2-desktop-9514c46b.jpg 1x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="/chocolate-adventure/assets/top-seller-2-tablet@2x-837bd499.jpg 2x, /chocolate-adventure/assets/top-seller-2-tablet-08bf6bca.jpg 1x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/chocolate-adventure/assets/top-seller-2-mobile@2x-64337c96.jpg 2x, /chocolate-adventure/assets/top-seller-2-mobile-af855883.jpg 1x"
-          media="(min-width: 375px)"
-        />
-        <img
-          src="/chocolate-adventure/assets/top-seller-2-mobile-af855883.jpg"
-          alt="pieces of
+      <section class="section-top-sellers">
+  <div class="container">
+    <h2 class="section-title"><span class="section-title-orange">top</span>sellers</h2>
+    <ul class="top-sellers-list">
+      <li class="top-sellers-item">
+        <picture class="top-sellers-img">
+          <source
+            srcset="/chocolate-adventure/assets/top-seller-1-desktop@2x-36ce1883.jpg 2x, /chocolate-adventure/assets/top-seller-1-desktop-003d484c.jpg 1x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/chocolate-adventure/assets/top-seller-1-tablet@2x-3b41f556.jpg 2x, /chocolate-adventure/assets/top-seller-1-tablet-798a2ef1.jpg 1x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/chocolate-adventure/assets/top-seller-1-mobile@2x-e06e7104.jpg 2x, /chocolate-adventure/assets/top-seller-1-mobile-26b5cc5b.jpg 1x"
+            media="(min-width: 375px)"
+          />
+          <img
+            src="/chocolate-adventure/assets/top-seller-1-mobile-26b5cc5b.jpg"
+            alt="pieces of chocolate stacked on top of each other"
+          />
+        </picture>
+      </li>
+      <li class="top-sellers-item">
+        <picture class="top-sellers-img">
+          <source
+            srcset="/chocolate-adventure/assets/top-seller-2-desktop@2x-32d00a91.jpg 2x, /chocolate-adventure/assets/top-seller-2-desktop-9514c46b.jpg 1x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/chocolate-adventure/assets/top-seller-2-tablet@2x-837bd499.jpg 2x, /chocolate-adventure/assets/top-seller-2-tablet-08bf6bca.jpg 1x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/chocolate-adventure/assets/top-seller-2-mobile@2x-64337c96.jpg 2x, /chocolate-adventure/assets/top-seller-2-mobile-af855883.jpg 1x"
+            media="(min-width: 375px)"
+          />
+          <img
+            src="/chocolate-adventure/assets/top-seller-2-mobile-af855883.jpg"
+            alt="pieces of
         chocolate with nuts stacked on top of each other"
+          />
+        </picture>
+      </li>
+      <li class="top-sellers-item">
+        <img
+          srcset="/chocolate-adventure/assets/top-seller-3-desktop@2x-41beb747.jpg 2x, /chocolate-adventure/assets/top-seller-3-desktop-8344832d.jpg 1x"
+          src="/chocolate-adventure/assets/top-seller-3-desktop-8344832d.jpg"
+          width="368"
+          height="464"
+          alt="pieces of different type of chocolate stacked on top of each other"
         />
-      </picture>
-    </li>
-    <li>
-      <img
-        srcset="/chocolate-adventure/assets/top-seller-3-desktop@2x-41beb747.jpg 2x, /chocolate-adventure/assets/top-seller-3-desktop-8344832d.jpg 1x"
-        src="/chocolate-adventure/assets/top-seller-3-desktop-8344832d.jpg"
-        width="368"
-        height="464"
-        alt="pieces of different type of chocolate stacked on top of each other"
-      />
-    </li>
-  </ul>
-  <p>
-    Crazy enough chocolate originates from a bean just like the coffee bean
-    called Cacao. Cacao has been around for thousands of years and was first
-    discovered by the Native American tribe called the Mayans.
-  </p>
-  <button type="button">buy now</button>
+      </li>
+    </ul>
+    <p class="top-sellers-text">
+      Crazy enough chocolate originates from a bean just like the coffee bean
+      called Cacao. Cacao has been around for thousands of years and was first
+      discovered by the Native American tribe called the Mayans.
+    </p>
+    <button class="top-sellers-button" type="button">buy now</button>
+  </div>
+  <!--   thank you for your feedback pop-up -->
+  <div class="top-sellers-popup">
+    <button class="top-sellers-popup-close" type="button">
+      <svg class="top-sellers-popup-icon">
+        <use href="#"></use>
+      </svg>
+    </button>
+    <p class="top-sellers-popup-title">thank you!</p>
+    <p class="top-sellers-popup-text">
+      We are glad that you ordered our chocolate and we are giving you a 20%
+      discount on all our products.
+    </p>
+  </div>
 </section>
 
       <section class="rewiews">
