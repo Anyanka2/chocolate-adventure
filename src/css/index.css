@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 /*base*/
 @import url('./base/reset.css');
 @import url('./base/roots.css');
@@ -18,5 +20,3 @@
 @import url('./layout/rewiews.css');
 @import url('./layout/subscribe.css');
 @import url('./layout/footer.css');
-
-
