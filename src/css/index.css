@@ -1,6 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+
 /*base*/
 @import url('./base/reset.css');
 @import url('./base/roots.css');
