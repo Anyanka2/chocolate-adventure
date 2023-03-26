@@ -1,4 +1,9 @@
 /* Reset styles */
+body {
+  font-family: var(--main-font-family);
+  background-color: var(--main-background-color);
+}
+
 h1,
 h2,
 h3,

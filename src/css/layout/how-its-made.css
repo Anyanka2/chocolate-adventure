@@ -1,6 +1,5 @@
 
 .how-its-made {
-   font-family: 'Montserrat';/* roots */
    padding-left: 32px;
    padding-right: 32px;
     
@@ -45,7 +44,7 @@
     padding-right: 50px;
     padding-bottom: 32px;
     border-radius: 15px;
-    background-color: #FFFFFF; /*roots */
+    background-color: var(--main-color-theme-dark); /*roots */
     /* min-height: 400px */
 } 
 
