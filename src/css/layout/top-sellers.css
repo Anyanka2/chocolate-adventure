@@ -1,3 +1,39 @@
+/*Top sellers section*/
+
+.section-title {
+  font-size: 24px;
+  line-height: 1.12;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-color-theme-light);
+}
+.section-title-orange {
+  color: var(--hover-color-dark);
+}
+.top-sellers-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top-sellers-img {
+  border-radius: 15px;
+}
+.top-sellers-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.top-sellers-text {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  width: 407px;
+}
 .top-sellers-button {
   display: block;
   text-align: center;
@@ -15,7 +51,7 @@
   cursor: pointer;
 }
 .top-sellers-button:hover,
-.top-sellers-button:focus{
-    color: var(--hover-color-dark);
-    background-color: var(--hover-color-light);
+.top-sellers-button:focus {
+  color: var(--hover-color-dark);
+  background-color: var(--hover-color-light);
 }
