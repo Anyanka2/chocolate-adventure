@@ -1,3 +1,6 @@
+.footer {
+  background-color: var(--dark-background-color);
+}
 .container {
   width: 100%;
   max-width: 375px;
@@ -5,7 +8,6 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #1e1823;
 }
 @media (min-width: 768px) {
   .container {
