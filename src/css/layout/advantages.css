@@ -1,7 +1,33 @@
 .advantages {
     background-color:var(--dark-background-color);
-    /* padding: 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
 } 
+
+@media screen and (min-width: 768px) {
+    .advantages{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
+    height: 1px; 
+    overflow: hidden; 
+    border: 0; 
+    padding: 0; 
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%); 
+    margin: -1px; 
+}
+
+
 
 .advantages-icon {
     display: flex;
@@ -14,7 +40,6 @@
     align-items: center;
     margin-bottom: 22px;
 }
-
 
 .advantages-svg {
     width: 32px;
