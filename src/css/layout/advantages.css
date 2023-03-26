@@ -1,4 +1,24 @@
 .advantages {
     background-color:var(--dark-background-color);
     /* padding: 20px; */
+} 
+
+.advantages-icon {
+    display: flex;
+    background-color: currentColor;
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
 }
+
+
+.advantages-svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--hover-color-dark);
+}
+
