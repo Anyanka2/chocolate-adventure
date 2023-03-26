@@ -47,3 +47,13 @@
     fill: var(--hover-color-dark);
 }
 
+.advantages-name {
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--main-color-theme-dark);
+    text-align: left;
+
+}
+
