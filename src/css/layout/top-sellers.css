@@ -16,6 +16,6 @@
 }
 .top-sellers-button:hover,
 .top-sellers-button:focus{
-    color: var;
+    color: var(--hover-color-dark);
     background-color: var(--hover-color-light);
 }
