@@ -1,3 +1,5 @@
+/*--footer--*/
+
 .footer {
   background-color: var(--dark-background-color);
 }
@@ -60,7 +62,7 @@
 .color-tagline {
   color: var(--hover-color-dark);
 }
-.footer-address {
+.footer-contacts {
   display: flex;
   justify-content: space-between;
 }
@@ -84,7 +86,7 @@
   flex-direction: column;
   gap: 4px 0;
 }
-.address-text {
+.contacts-text {
   color: var(--main-color-theme-dark);
   font-family: 'Montserrat';
   font-style: normal;
