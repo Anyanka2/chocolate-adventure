@@ -54,6 +54,7 @@
   .tagline {
     font-size: 28px;
     line-height: 1.214;
+    margin-bottom: 0;
   }
 }
 .color-tagline {
@@ -62,12 +63,22 @@
 .footer-address {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
 }
 .footer-socials {
   display: flex;
   gap: 14px;
 }
+@media (min-width: 768px) {
+  .footer-socials {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-socials {
+    margin-left: 62px;
+  }
+}
+
 .address-list {
   display: flex;
   flex-direction: column;
@@ -80,6 +91,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
+  margin-bottom: 14px;
 }
 .contacts-link {
   font-family: 'Montserrat';
