@@ -1,0 +1,99 @@
+
+.how-its-made {
+   font-family: 'Montserrat';/* roots */
+   padding-left: 32px;
+   padding-right: 32px;
+    
+}
+.tittle-how-its-made {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.17;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111; /* roots */
+}
+.tittle-how-its-made-second-part{
+    color: #FD9222; /* roots */
+}
+
+.process {
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} 
+.process-p {
+    display: inline;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33px;
+    margin-bottom: 28px;
+    margin-bottom: 28px;
+}
+
+.process-description {
+    color: #111111; /* roots */
+    max-width: 516px;
+    height: 400px;
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 50px;
+    padding-bottom: 32px;
+    border-radius: 15px;
+    background-color: #FFFFFF; /*roots */
+    /* min-height: 400px */
+} 
+
+.process-item{
+    position: relative;
+    margin-left: 16px;
+}
+
+.process-item::before {
+    position: absolute;
+    left: -16px;
+    top: 4px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #4C4C4C;
+    border: 1px solid #ECEDED;
+    border-radius: 50%;
+    content: '';
+}
+
+.process-list {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.process-video {
+    position: relative;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    /* max-width: 600px; */
+}
+
+.play-btn {
+    position: absolute;
+    top: 178px;
+    right: 278px;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
