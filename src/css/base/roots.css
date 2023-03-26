@@ -1,15 +1,17 @@
 :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    --main-font-family: 'Montserrat';
+    --main-background-color: #E2E2E2;
+    --dark-background-color: #1E1823;
+    --hover-color-dark: #FD9222;
+    --hover-color-light: #FCF1E0;
+    --main-color-theme-light: #111111;
+    --secondary-color-theme-light: #FFFFFFB2;
+    --main-color-theme-dark: #FFFFFF;
+    --slider-color: #1111111A;
+    --icon-ukraine-top: #0057B7;
+    --icon-ukraine-bottom: #FFD700;
+    --icon-mastercard-left: #ED0006;
+    --icon-mastercard-middle: #FF5E00;
+    --icon-mastercard-right:#F9A000;
 
-    color: #242424;
-    background-color: rgba(255, 255, 255, 0.87);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
 }
