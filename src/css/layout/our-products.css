@@ -1,0 +1,119 @@
+.containerTEMP {
+    width: 1200px;
+    padding: 0px 33px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-list {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.tittle-span {
+    color: var(--hover-color-dark);
+}
+
+.products-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: 1.17;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
+    color: var(--main-color-theme-light);
+
+
+}
+
+.slider-list-element {
+    background-color: #ffffff;
+    padding: 31px 19px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    transition: transform 500ms, opacity 250ms;
+
+}
+
+.slider-list-element img {
+    max-width: none;
+    margin-bottom: 8px;
+}
+
+.our-products-card-text {
+    margin-bottom: 18px;
+}
+
+.our-products-card-text-first {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
+
+.our-products-card-text-second {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.our-products-card-btn {
+    padding: 8px 20px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--main-color-theme-light);
+    font-family: var(--main-font-family);
+    line-height: 1;
+    background-color: #FAFAFA;
+border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 100px;
+transition: background-color 250ms, color 250ms;
+text-transform: uppercase;
+
+}
+.our-products-card-btn:hover{
+   background-color: var(--hover-color-dark);
+   color: var(--main-color-theme-dark);
+}
+.slider-btn-list {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    gap: 13px;
+}
+
+.slider-btn {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    background: rgba(17, 17, 17, 0.1);
+    transition: background 500ms, border-radius 500ms, width 500ms;
+}
+
+.slider-btn.active-slider-btn {
+    background: #FD9222;
+    width: 28px;
+    border-radius: 15px;
+
+}
