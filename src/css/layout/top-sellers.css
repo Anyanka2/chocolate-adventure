@@ -9,7 +9,7 @@
   outline: 2px outset var(--secondary-color-theme-light);
   outline-offset: -10px;
   border-radius: 15px;
-  }
+}
 .top-sellers-item:hover .top-sellers-img {
   transform: scale(1.5);
 }
@@ -23,7 +23,7 @@
   padding-top: 32px;
 }
 .top-sellers-text {
-color: var(--main-color-theme-light);
+  color: var(--main-color-theme-light);
   display: block;
   width: 407px;
 }
