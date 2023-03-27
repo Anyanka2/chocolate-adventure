@@ -12,7 +12,7 @@
     rel="stylesheet">
     
     <script type="module" crossorigin src="/chocolate-adventure/assets/index-829b32e3.js"></script>
-    <link rel="stylesheet" href="/chocolate-adventure/assets/index-a3d25e42.css">
+    <link rel="stylesheet" href="/chocolate-adventure/assets/index-4870a7f7.css">
   </head>
   <body>
     <header class="header">
@@ -843,7 +843,12 @@
 <!--Modal window-->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <!-- <img src="/src/img/pop-up/pop-up-1-mobile.jpg" alt="" width="311" height="169"> -->
+      <button class="modal-btn-subs" type="button" data-modal-close>
+        <svg class="modal-icon-subs" width="24" height="24">
+            <use href="/chocolate-adventure/assets/icons-4002cb1e.svg#icon-x"></use>
+        </svg>
+    </button>
+       
         <picture class="subs-modal-img">
             <source
               srcset="/chocolate-adventure/assets/pop-up-2-2321ac1c.jpg 1x, /chocolate-adventure/assets/pop-up-2@2x-28e59ba5.jpg 2x"
@@ -866,12 +871,13 @@
               width=""
             />
           </picture>
-
+        <div class="modal-input">
         <strong class="modal-title">explore our <br> new chocolate first</strong>
         <form class="submit-form" name="submit_form">
-            <input  class="submit-input" type="email" name="submit_form" placeholder="Email" required>
+            <input  class="submit-input" type="email" name="submit_form" placeholder="Enter your email"  pattern="email" required>
             <button class="submit-btn btn" type="submit" data-modal-close>Submit</button>
         </form>
+      </div>
     </div>
     </div>
 
