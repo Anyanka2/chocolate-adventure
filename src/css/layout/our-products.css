@@ -6,13 +6,15 @@
 }
 
 .slider-list {
+
     position: relative;
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 18px;
     overflow: hidden;
     margin-bottom: 32px;
+    gap: 18px;
+
 }
 
 .tittle-span {
@@ -34,11 +36,13 @@
 }
 
 .slider-list-element {
+
     background-color: #ffffff;
-    padding: 31px 19px;
+    padding: 31px 22px;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     transition: transform 500ms, opacity 250ms;
+
 
 }
 
@@ -83,16 +87,18 @@
     font-family: var(--main-font-family);
     line-height: 1;
     background-color: #FAFAFA;
-border: 1px solid rgba(17, 17, 17, 0.1);
-border-radius: 100px;
-transition: background-color 250ms, color 250ms;
-text-transform: uppercase;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    transition: background-color 250ms, color 250ms;
+    text-transform: uppercase;
 
 }
-.our-products-card-btn:hover{
-   background-color: var(--hover-color-dark);
-   color: var(--main-color-theme-dark);
+
+.our-products-card-btn:hover {
+    background-color: var(--hover-color-dark);
+    color: var(--main-color-theme-dark);
 }
+
 .slider-btn-list {
     justify-content: center;
     display: flex;

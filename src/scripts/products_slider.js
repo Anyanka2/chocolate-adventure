@@ -7,7 +7,7 @@ for (let i = 4; i < refs.cards.length; i++) {
     refs.cards[i].style.opacity = 0;
     refs.cards[i].style.pointerEvents = 'none';
 }
-const move = -288;
+const move = -294;
 let current_btn = 0;
 for (let i = 0; i < refs.btns.length; i++) {
     refs.btns[i].addEventListener("click", function() {
@@ -118,3 +118,4 @@ function main() {
     refs.btns[current_btn].classList.add("active-slider-btn");
 
 }
+console.log(document.documentElement.clientWidth);
