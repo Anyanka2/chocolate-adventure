@@ -27,11 +27,18 @@
     margin: -1px; 
 }
 
+.advantages-item {
+    margin-bottom: 20px;
+}
+
+.advantages-item:last-child {
+    margin-bottom: 0;
+}
+
 
 
 .advantages-icon {
     display: flex;
-    background-color: currentColor;
     width: 62px;
     height: 62px;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -54,6 +61,12 @@
     line-height: 1.22;
     color: var(--main-color-theme-dark);
     text-align: left;
+}
 
+.advantages-text {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
 }
 
