@@ -80,7 +80,23 @@
     margin-left: 62px;
   }
 }
-
+.icon-footer {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  fill: var(--main-color-theme-dark);
+  stroke: var(--main-color-theme-light);
+}
+@media (min-width: 768px) {
+  .icon-footer {
+    width: 24px;
+    height: 24px;
+  }
+}
+.icon-footer:hover,
+:focus {
+  stroke: var(--hover-color-dark);
+}
 .address-list {
   display: flex;
   flex-direction: column;
