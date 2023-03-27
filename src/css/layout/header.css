@@ -1,0 +1,112 @@
+/*--Header--*/
+.container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--main-background-color);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+@media screen and (min-width: 1200px) {
+    .header-container {
+        max-width: 1200px;
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+}
+.header-link:is(:hover, :focus) {
+    color: var(--hover-color-dark);
+}
+.icon-menu-burger {
+    display: none;
+}
+.header-navigation {
+    display: flex;
+    gap: 188px
+}
+.header-logo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.header-logo-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: var(--main-color-theme-light);
+}
+.header-logo-part {
+    font-style: italic;
+}
+.header-logo-icon {
+    fill: none;
+    stroke: var(--hover-color-dark);
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.header-social-icon {
+    fill: none;
+    stroke: var(--main-color-theme-light);
+}
+.header-social-link {
+    display: block;
+}
+@media screen and (max-width: 1199px) {
+    .header-list {
+        display: none;
+    }
+}
+.header-list-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--main-color-theme-light);
+}
+.header-social-list {
+    display: flex;
+    gap: 18px;
+}
+.header-social-link,
+.header-social-icon:is(:hover, :focus) {
+    stroke: var(--hover-color-dark);
+}
+@media screen and (max-width: 1199px) {
+    .header-social-list {
+        display: none;
+    }
+}
+.open-menu-burger {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.icon-menu-burger {
+    stroke: var(--main-color-theme-light);
+}
+@media screen and (min-width: 768px) {
+    .icon-menu-burger {
+        width: 32px;
+        height: 32px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .open-menu-burger {
+        display: none;
+    }
+}
