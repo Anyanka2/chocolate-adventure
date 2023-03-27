@@ -7,7 +7,7 @@ for (let i = 4; i < refs.cards.length; i++) {
     refs.cards[i].style.opacity = 0;
     refs.cards[i].style.pointerEvents = 'none';
 }
-const move = -294;
+let move = 0;
 let current_btn = 0;
 for (let i = 0; i < refs.btns.length; i++) {
     refs.btns[i].addEventListener("click", function() {
@@ -18,7 +18,16 @@ for (let i = 0; i < refs.btns.length; i++) {
 
 
 function main() {
-
+    if (document.documentElement.clientWidth < 768) {
+        move = -392;
+    }
+    else if (document.documentElement.clientWidth >= 768 &&
+        document.documentElement.clientWidth < 1200) {
+        move = -10;
+    }
+    else {
+        move = -294;
+    }
     switch (current_btn) {
         case 0:
             for (let i = 0; i < refs.cards.length; i++) {
