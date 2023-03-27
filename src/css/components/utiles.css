@@ -1,0 +1,27 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-title {
+  font-size: 24px;
+  line-height: 1.12;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-color-theme-light);
+}
+
+.accent {
+  color: var(--hover-color-dark);
+}

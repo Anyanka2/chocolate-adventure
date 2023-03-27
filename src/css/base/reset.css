@@ -1,9 +1,11 @@
-/* Reset styles */
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--main-font-family);
   background-color: var(--main-background-color);
 }
-
+/* Reset styles */
 h1,
 h2,
 h3,
