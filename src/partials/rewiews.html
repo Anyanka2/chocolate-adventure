@@ -1,43 +1,107 @@
+<!--   rewiews section  -->
 <section class="rewiews">
-  <!--   rewiews section  -->
   <div class="container">
-    <h2 class="section-title">chocolate is loved</h2>
+    <h2 class="section-title">
+      <span class="accent">chocolate</span> is loved
+    </h2>
     <ul class="rewiews-list">
       <li class="rewiews-list-item">
-        <img class="rewiews-author-photo" src="#" alt="name" />
-        <h3 class="rewiews-author-name"></h3>
-        <p class="rewiews-author-text"></p>
+        <img
+          class="rewiews-author-photo"
+          srcset="/img/reviews/review-4.jpg 1x, /img/reviews/review-4@2x.jpg 2x"
+          src="/img/reviews/review-4.jpg"
+          alt="name"
+        />
+        <h3 class="rewiews-author-name">Victoria Dobrzhanska</h3>
+        <p class="rewiews-author-text">
+          I love this chocolate bar. Perfect combination of light crispy wafer,
+          covered in a thin layer chocolate.
+        </p>
       </li>
       <li class="rewiews-list-item">
-        <img class="rewiews-author-photo" src="#" alt="name" />
-        <h3 class="rewiews-author-name"></h3>
-        <p class="rewiews-author-text"></p>
+        <img
+          class="rewiews-author-photo"
+          srcset="/img/reviews/review-5.jpg 1x, /img/reviews/review-5@2x.jpg 2x"
+          src="/img/reviews/review-5.jpg"
+          alt="name"
+        />
+        <h3 class="rewiews-author-name">Nazar Babenko</h3>
+        <p class="rewiews-author-text">
+          This chocolate confection is a delight! A delight! The wafer is light
+          and crisp, the hazelnut cream is smooth, and the chocolate is good.
+        </p>
       </li>
       <li class="rewiews-list-item">
-        <img class="rewiews-author-photo" src="#" alt="name" />
-        <h3 class="rewiews-author-name"></h3>
-        <p class="rewiews-author-text"></p>
+        <img
+          class="rewiews-author-photo"
+          srcset="/img/reviews/review-6.jpg 1x, /img/reviews/review-6@2x.jpg 2x"
+          src="/img/reviews/review-6.jpg"
+          alt="name"
+        />
+        <h3 class="rewiews-author-name">Olena Kampusch</h3>
+        <p class="rewiews-author-text">
+          Chocolate is a family favourite treat. Love the delicious smooth
+          chocolate and the creaminess inside. The wafer is soft but crunchy.
+        </p>
       </li>
       <li class="rewiews-list-item">
-        <img class="rewiews-author-photo" src="#" alt="name" />
-        <h3 class="rewiews-author-name"></h3>
-        <p class="rewiews-author-text"></p>
+        <img
+          class="rewiews-author-photo"
+          srcset="/img/reviews/review-1.jpg 1x, /img/reviews/review-1@2x.jpg 2x"
+          src="/img/reviews/review-1.jpg"
+          alt="name"
+        />
+        <h3 class="rewiews-author-name">Natalia Sus</h3>
+        <p class="rewiews-author-text">
+          The chocolate assortment was delicious. Both dark and milk chocolate
+          pieces were smooth and just right on the sweetness level.
+        </p>
       </li>
       <li class="rewiews-list-item">
-        <img class="rewiews-author-photo" src="#" alt="name" />
-        <h3 class="rewiews-author-name"></h3>
-        <p class="rewiews-author-text"></p>
+        <img
+          class="rewiews-author-photo"
+          srcset="/img/reviews/review-2.jpg 1x, /img/reviews/review-2@2x.jpg 2x"
+          src="/img/reviews/review-2.jpg"
+          alt="name"
+        />
+        <h3 class="rewiews-author-name">Danilo Nottingham</h3>
+        <p class="rewiews-author-text">
+          This is delicious. It so rich and flavorful you don’t need to use as
+          many. I love topping an apple with almond butter and these chips for a
+          snack.
+        </p>
       </li>
       <li class="rewiews-list-item">
-        <img class="rewiews-author-photo" src="#" alt="name" />
-        <h3 class="rewiews-author-name"></h3>
-        <p class="rewiews-author-text"></p>
+        <img
+          class="rewiews-author-photo"
+          srcset="/img/reviews/review-3.jpg 1x, /img/reviews/review-3@2x.jpg 2x"
+          src="/img/reviews/review-3.jpg"
+          alt="name"
+        />
+        <h3 class="rewiews-author-name">Irina Tydnyuk</h3>
+        <p class="rewiews-author-text">
+          This is simply the best chocolate around, and I'm just thrilled to
+          support a local company! Best local chocolate - world class :)
+        </p>
       </li>
     </ul>
     <ul class="slider-btn-list">
-      <li><button type="button" class="slider-btn"></button></li>
-      <li><button type="button" class="slider-btn"></button></li>
-      <li><button type="button" class="slider-btn"></button></li>
+      <li>
+        <button
+          type="button"
+          class="slider-btn active-slider-btn"
+          rewiew-slider-btn
+        ></button>
+      </li>
+      <li>
+        <button type="button" class="slider-btn" rewiew-slider-btn></button>
+      </li>
+      <li>
+        <button type="button" class="slider-btn" rewiew-slider-btn></button>
+      </li>
+      <li>
+        <button type="button" class="slider-btn" rewiew-slider-btn></button>
+      </li>
     </ul>
     <button type="submit" class="review-btn">Leave a review</button>
   </div>
@@ -50,9 +114,9 @@
         <use href="#"></use>
       </svg>
     </button>
-    <p class="rewiew-form-title">
+    <h3 class="rewiew-form-title">
       Leave your contacts and we will call you back
-    </p>
+    </h3>
     <form class="rewiew-form" name="contact-form" autocomplete="off">
       <div class="rewiew-form-field">
         <label class="rewiew-form-label" for="user-name">Name</label>
@@ -110,7 +174,8 @@
         <use href="#"></use>
       </svg>
     </button>
-    <p class="rewiew-popup-title">thank you for your feedback!</p>
+    <h3 class="rewiew-popup-title">thank you for your feedback!</h3>
     <p class="rewiew-popup-text">We are so happy to hear from you!</p>
+    <img src="#" alt="chocolate" />
   </div>
 </section>

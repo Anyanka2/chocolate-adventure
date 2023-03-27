@@ -7,13 +7,18 @@
     font-weight: 600;
     color: var(--main-color-theme-dark);
 }
-
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 25px var(--hover-color-dark),
+            0 0 50px var(--hover-color-light);
+    }
+}
 .dark-btn:hover,
 .dark-btn:focus {
     background-color: var(--hover-color-light);
     color: var(--hover-color-dark);
+    animation: var(--button-animation);
 }
-
 
 .transperent-btn-dark-theme {
     background-color: transparent;
@@ -29,6 +34,7 @@
 .transperent-btn-dark-theme:focus {
     color: var(--hover-color-dark);
     border: 1px solid var(--hover-color-dark);
+    animation: var(--button-animation);
 }
 
 .transperent-btn-light-theme {
@@ -43,8 +49,8 @@
 
 .transperent-btn-light-theme:hover,
 .transperent-btn-light-theme:focus {
-
     color: var(--main-color-theme-dark);
     border: none;
     background-color: var(--hover-color-dark);
+    animation: var(--button-animation);
 }

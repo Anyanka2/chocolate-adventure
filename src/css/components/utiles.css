@@ -24,7 +24,7 @@ body {
 }
 /* H2 */
 .section-title {
-  font-size: 24px;
+font-size: 20px;
   line-height: 1.2;
   margin-bottom: 32px;
   text-align: center;
@@ -33,16 +33,14 @@ body {
   text-transform: uppercase;
   color: var(--main-color-theme-light);
 }
-
-@media (min-width: 768px) {
-  .section-title {
-    margin-bottom: 50px;
-    line-height: 1.17;
-  }
-}
-
 .accent {
   color: var(--hover-color-dark);
+}
+@media screen and (min-width: 768px){
+  .section-title{
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 50px;
 }
 
 /*Section*/
