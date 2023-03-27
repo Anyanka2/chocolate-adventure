@@ -1,4 +1,5 @@
 .dark-btn {
+    font-family: inherit;
     background-color: var(--hover-color-dark);
     border-radius: 100px;
     border: none;
@@ -21,6 +22,7 @@
 }
 
 .transperent-btn-dark-theme {
+    font-family: inherit;
     background-color: transparent;
     border-radius: 100px;
     border: 1px solid var(--main-color-theme-dark);
@@ -38,6 +40,7 @@
 }
 
 .transperent-btn-light-theme {
+    font-family: inherit;
     background-color: transparent;
     border-radius: 100px;
     border: 1px solid var(--hover-color-dark);
