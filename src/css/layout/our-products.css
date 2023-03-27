@@ -19,23 +19,6 @@
 
 }
 
-.tittle-span {
-    color: var(--hover-color-dark);
-}
-
-.products-title {
-    font-size: 24px;
-    font-style: normal;
-    line-height: 1.17;
-    margin-bottom: 50px;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: -.03em;
-    text-transform: uppercase;
-    color: var(--main-color-theme-light);
-
-
-}
 
 @media screen and (min-width: 375px) {
     .products-title {
@@ -84,6 +67,7 @@
 }
 
 .our-products-card-text-first {
+    color: var(--main-color-theme-light);
     text-transform: uppercase;
     font-size: 18px;
     font-style: normal;
@@ -125,6 +109,7 @@
 .our-products-card-btn:hover {
     background-color: var(--hover-color-dark);
     color: var(--main-color-theme-dark);
+ 
 }
 
 .slider-btn-list {
@@ -142,7 +127,7 @@
     border-radius: 50%;
     border: none;
     background: rgba(17, 17, 17, 0.1);
-    transition: background 500ms, border-radius 500ms, width 500ms;
+    transition: background 500ms, border-radius 500ms, width 500ms, transform 100ms;
 }
 
 .slider-btn.active-slider-btn {
@@ -150,4 +135,10 @@
     width: 28px;
     border-radius: 15px;
 
+
+}
+@media screen and (min-width:1200px) {
+    .slider-btn:hover{
+    transform: scale(1.6);
+}
 }
