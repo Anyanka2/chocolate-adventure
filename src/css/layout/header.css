@@ -1,9 +1,4 @@
 /*--Header--*/
-.container {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 .header {
     position: sticky;
     top: 0;
