@@ -1,4 +1,5 @@
 .subscribe {
+    padding-top: 62px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
     url(/img/footer/footer-mobile.jpg);
     background-size: cover;
@@ -16,6 +17,7 @@
 
 @media (min-width: 768px) {
     .subscribe {
+        padding-top: 72px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
     url(/img/footer/footer-tablet.jpg);
     }
@@ -44,10 +46,13 @@
         }
 } 
 
+
 .container {
     color: var(--main-color-theme-dark);
 }
-.section-title {
+
+
+.subscribe-title {
     margin-bottom: 32px;
     font-weight: 600;
 font-size: 24px;
@@ -72,12 +77,13 @@ letter-spacing: -0.02em;
 width: 326px;
     }
 }
-.dark-btn {
+
+.subsc-btn {
     display: flex;
 padding: 12px 28px;
 margin-left: auto;
 margin-right: auto;
-font-family: 'Montserrat';
+font-family: var(--main-font-family);
 }
 
 
@@ -108,6 +114,8 @@ font-family: 'Montserrat';
     /* max-width: 263px; */
     border-radius: 15px;
     background-color: var(--main-color-theme-dark);
+    transition: var(--transition-hover);
+    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -168,7 +176,7 @@ border-radius: 25px;
         border-radius: 100px;
         border: none;
 
-        font-family: 'Montserrat';
+        font-family: var(--main-font-family);
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
