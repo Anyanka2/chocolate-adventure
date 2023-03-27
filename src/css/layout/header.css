@@ -88,7 +88,6 @@
 .header-social-icon{
     transition: stroke var(--transition-hover);
     }
-}
 .header-social-link,
 .header-social-icon:is(:hover, :focus) {
     stroke: var(--hover-color-dark);
