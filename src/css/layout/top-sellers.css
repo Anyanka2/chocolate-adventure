@@ -23,6 +23,7 @@
   padding-top: 32px;
 }
 .top-sellers-text {
+color: var(--main-color-theme-light);
   display: block;
   width: 407px;
 }
