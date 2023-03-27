@@ -31,6 +31,12 @@
     }
 }
 
+@media screen and (min-width:1200px) {
+    .advantages-set {
+        flex-wrap: nowrap;
+    }
+}
+
 
 
 
