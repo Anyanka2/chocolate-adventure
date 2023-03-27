@@ -5,17 +5,26 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.top-sellers-item {
+
+/*.top-sellers-item {
   outline: 2px outset var(--secondary-color-theme-light);
   outline-offset: -10px;
   border-radius: 15px;
 }
 .top-sellers-item:hover .top-sellers-img {
   transform: scale(1.5);
-}
+}*/
 .top-sellers-img {
   transition: transform 0.25s;
   border-radius: 15px;
+}
+.top-sellers-item-desk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .top-sellers-item-desk {
+    display: block;
+  }
 }
 .top-sellers-bottom {
   display: flex;

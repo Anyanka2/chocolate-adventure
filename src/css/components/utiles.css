@@ -24,8 +24,8 @@ body {
 }
 /* H2 */
 .section-title {
-  font-size: 24px;
-  line-height: 1.12;
+  font-size: 20px;
+  line-height: 1.2;
   margin-bottom: 32px;
   text-align: center;
   font-weight: 600;
@@ -36,6 +36,12 @@ body {
 
 .accent {
   color: var(--hover-color-dark);
+}
+@media screen and (min-width: 768px){
+  .section-title{
+  font-size: 24px;
+  line-height: 1.17;
+}
 }
 
 /*Section*/
