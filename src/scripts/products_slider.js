@@ -1,6 +1,6 @@
 const refs = {
     cards: document.getElementsByClassName("slider-list-element"),
-    btns: document.getElementsByClassName("slider-btn"),
+    btns: document.querySelectorAll("[products-slider-btn]"),
     slider: document.getElementsByClassName("slider-list")
 };
 for (let i = 4; i < refs.cards.length; i++) {
