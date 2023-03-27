@@ -2,10 +2,19 @@
 
 .top-sellers-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
 }
 
+@media (min-width: 768px) {
+  .top-sellers-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 /*.top-sellers-item {
   outline: 2px outset var(--secondary-color-theme-light);
   outline-offset: -10px;
@@ -14,6 +23,7 @@
 .top-sellers-item:hover .top-sellers-img {
   transform: scale(1.5);
 }*/
+
 .top-sellers-img {
   transition: transform 0.25s;
   border-radius: 15px;
@@ -21,44 +31,58 @@
 .top-sellers-item-desk {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .top-sellers-item-desk {
     display: block;
   }
 }
+
 .top-sellers-bottom {
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
   padding-top: 32px;
 }
-.top-sellers-text {
-  color: var(--main-color-theme-light);
-  display: block;
-  width: 407px;
-}
-.top-sellers-button {
-  display: inline-block;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-  padding: 14px 40px;
-  width: 162px;
-  height: 50px;
-  color: var(--main-color-theme-dark);
-  background-color: var(--hover-color-dark);
-  border-radius: 100px;
-  border: none;
-}
-@keyframes pulse {
-  from {
-    box-shadow: 0 0 25px var(--hover-color-dark),
-      0 0 50px var(--hover-color-light);
+
+@media (min-width: 768px) {
+  .top-sellers-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
   }
 }
-.top-sellers-button:focus,
-.top-sellers-button:hover {
-  color: var(--hover-color-dark);
-  background-color: var(--hover-color-light);
-  animation: pulse 0.5s ease-in-out;
+.top-sellers-text {
+  color: var(--main-color-theme-light);
+  width: 335px;
+  padding-left: 20px;
+  text-align: justify;
 }
+@media (min-width: 768px) {
+  .top-sellers-text {
+    display: block;
+    width: 407px;
+    padding-left: 0;
+    text-align: start;
+  }
+}
+.top-sellers-button {
+  font-family: inherit;
+  padding: 12px 28px;
+  width: 120px;
+  height: 41px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+.top-sellers-button {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 14px 40px;
+    width: 162px;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
