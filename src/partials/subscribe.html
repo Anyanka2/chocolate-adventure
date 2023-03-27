@@ -13,7 +13,39 @@
 <!--Modal window-->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <img src="/src/img/pop-up/pop-up-1-mobile.jpg" alt="" width="311" height="169">
+        <!-- <img src="/src/img/pop-up/pop-up-1-mobile.jpg" alt="" width="311" height="169"> -->
+        <picture class="subs-modal-img">
+            <source
+              srcset="
+                /img/pop-up/pop-up-2.jpg 1x,
+                /img/pop-up/pop-up-2@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+              /img/pop-up/pop-up-2.jpg 1x,
+              /img/pop-up/pop-up-2@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="
+              /img/pop-up/pop-up-2-mobile.jpg 1x,
+              /img/pop-up/pop-up-2-mobile@2x.jpg 2x
+              "
+              media="(min-width: 375px)"
+            />
+
+            <img
+              class=""
+              src="../img/pop-up/pop-up-2.jpg"
+              alt="shocolate-bar"
+              width=""
+            />
+          </picture>
+
         <strong class="modal-title">explore our <br> new chocolate first</strong>
         <form class="submit-form" name="submit_form">
             <input  class="submit-input" type="email" name="submit_form" placeholder="Email" required>
