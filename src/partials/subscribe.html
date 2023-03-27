@@ -13,7 +13,12 @@
 <!--Modal window-->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <!-- <img src="/src/img/pop-up/pop-up-1-mobile.jpg" alt="" width="311" height="169"> -->
+      <button class="modal-btn-subs" type="button" data-modal-close>
+        <svg class="modal-icon-subs" width="24" height="24">
+            <use href="/img/icons.svg#icon-x"></use>
+        </svg>
+    </button>
+       
         <picture class="subs-modal-img">
             <source
               srcset="
@@ -45,12 +50,13 @@
               width=""
             />
           </picture>
-
+        <div class="modal-input">
         <strong class="modal-title">explore our <br> new chocolate first</strong>
         <form class="submit-form" name="submit_form">
-            <input  class="submit-input" type="email" name="submit_form" placeholder="Email" required>
+            <input  class="submit-input" type="email" name="submit_form" placeholder="Enter your email"  pattern="email" required>
             <button class="submit-btn btn" type="submit" data-modal-close>Submit</button>
         </form>
+      </div>
     </div>
     </div>
 

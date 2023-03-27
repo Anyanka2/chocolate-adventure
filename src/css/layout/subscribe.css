@@ -46,15 +46,33 @@
 
 .container {
     padding: 72px 0;
+    color: var(--main-color-theme-dark);
 }
 .subscribe-title {
     text-transform: uppercase;
     text-align: center;
+    font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: -0.03em;
 }
 .subscribe-subtitle {
     text-align: center;
     margin-top: 24px;
     margin-bottom: 24px;
+    width: 467px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe-subtitle{
+width: 326px;
+    }
 }
 .subscribe-button {
     display: flex;
@@ -88,6 +106,8 @@ color: var(--main-color-theme-dark);
     width: 100%;
     height: 100%;
     background: rgba(46, 47, 66, 0.4);
+    border-radius: 15px;
+    
 }
 .backdrop.is-hidden{
     visibility:hidden;
@@ -95,13 +115,12 @@ color: var(--main-color-theme-dark);
     pointer-events: none;
 }
 .modal {
-    padding: 0 24px 32px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95%;
-    max-width: 263px;
+    width: 311px;
+    /* max-width: 263px; */
     border-radius: 4px;
     background-color: var(--main-color-theme-dark);
 }
@@ -110,7 +129,9 @@ color: var(--main-color-theme-dark);
     opacity: 0;
     }
     
-    
+    .modal-input{
+        padding: 32px 24px;
+    }
     .modal-title{
         font-weight: 600;
         font-size: 20px;
@@ -127,18 +148,19 @@ color: var(--main-color-theme-dark);
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin-top: 24px;
     }
     .submit-input{
+        
         padding-top: 14px;
         padding-bottom: 14px;
         padding-left: 18px;
         font-weight: 400;
 font-size: 14px;
 line-height: 1.21px;
-        
-        
-        letter-spacing: 0.04em;
-        color: var(--main-color-theme-dark);
+letter-spacing: -0.02em;
+color: rgba(64, 64, 64, 0.3);
+
         width: 100%;
         border: 1.5px solid rgba(17, 17, 17, 0.05);
 filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
@@ -165,8 +187,22 @@ text-align: center;
     }
 
 .subs-modal-img{
-    background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  
+}
+
+.modal-btn-subs {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-icon-subs {
+    fill: #000000;;
 }
