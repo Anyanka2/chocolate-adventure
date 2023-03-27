@@ -1,3 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+/*TEXT*/
+body {
+  font-family: var(--main-font-family);
+  background-color: var(--main-background-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -11,7 +24,6 @@
   margin: -1px;
 }
 /* H2 */
-
 .section-title {
   font-size: 24px;
   line-height: 1.12;
@@ -26,8 +38,8 @@
 .accent {
   color: var(--hover-color-dark);
 }
-/*Section*/
 
+/*Section*/
 .section {
   padding-top: 72px;
 }
@@ -43,6 +55,7 @@
     padding-top: 128px;
   }
 }
+
 /* ----- ADAPTIVE CONTAINER ----- */
 @media (min-width: 375px) {
   .container {
@@ -51,7 +64,6 @@
     padding-right: 20px;
   }
 }
-
 
 @media (min-width: 768px) {
   .container {
@@ -66,6 +78,4 @@
     max-width: 1200px;
   }
 }
-
-
 /* ----- ADAPTIVE CONTAINER ----- */

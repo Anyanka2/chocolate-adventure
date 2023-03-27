@@ -6,20 +6,15 @@
   justify-content: space-between;
 }
 .top-sellers-item {
- 
   outline: 2px outset var(--secondary-color-theme-light);
   outline-offset: -10px;
   border-radius: 15px;
-  
-}
+  }
 .top-sellers-item:hover .top-sellers-img {
   transform: scale(1.5);
 }
 .top-sellers-img {
- 
- 
   transition: transform 0.25s;
- 
   border-radius: 15px;
 }
 .top-sellers-bottom {
@@ -29,10 +24,6 @@
 }
 .top-sellers-text {
   display: block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
   width: 407px;
 }
 .top-sellers-button {
