@@ -10,6 +10,7 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+/* H2 */
 
 .section-title {
   font-size: 24px;
@@ -25,3 +26,46 @@
 .accent {
   color: var(--hover-color-dark);
 }
+/*Section*/
+
+.section {
+  padding-top: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 128px;
+  }
+}
+/* ----- ADAPTIVE CONTAINER ----- */
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+
+/* ----- ADAPTIVE CONTAINER ----- */
