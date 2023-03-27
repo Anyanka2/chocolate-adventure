@@ -1,0 +1,64 @@
+.unique-section {
+  padding-top: 72px;
+  color: var(--main-color-theme-light);
+}
+
+@media screen and (min-width: 768px) {
+  .unique-section {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .unique-section {
+    padding-top: 128px;
+  }
+}
+
+.unique-title {
+  max-width: 287px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .unique-title {
+    max-width: 411px;
+    margin-bottom: 28px;
+  }
+}
+
+.unique-p {
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 339px;
+  text-align: center;
+  /* видалити */
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .unique-p {
+    margin-bottom: 50px;
+    max-width: 486px;
+  }
+}
+
+.front-card {
+  width: 335px;
+  height: 270px;
+
+  background-color: var(--main-color-theme-dark);
+}
+
+.brand-theme {
+  background-color: var(--hover-color-dark);
+}
+
+.dark {
+  background-color: var(--dark-background-color);
+}
