@@ -24,6 +24,9 @@
         padding-bottom: 32px;
     }
 }
+.header-link{
+    transition: color var(--transition-hover);
+}
 .header-link:is(:hover, :focus) {
     color: var(--hover-color-dark);
 }
@@ -80,6 +83,11 @@
 .header-social-list {
     display: flex;
     gap: 18px;
+}
+.header-social-link,
+.header-social-icon{
+    transition: stroke var(--transition-hover);
+    }
 }
 .header-social-link,
 .header-social-icon:is(:hover, :focus) {
