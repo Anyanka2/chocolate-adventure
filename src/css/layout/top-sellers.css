@@ -64,7 +64,7 @@
     text-align: start;
   }
 }
-.dark-btn {
+.top-sellers-button {
   font-family: inherit;
   padding: 12px 28px;
   width: 120px;
@@ -74,7 +74,7 @@
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .dark-btn {
+.top-sellers-button {
     font-weight: 600;
     font-size: 18px;
     padding: 14px 40px;
