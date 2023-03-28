@@ -99,27 +99,28 @@
         display: none;
     }
 }
-.open-menu-burger {
+.btn-open-burger {
     display: block;
     background: none;
     border: none;
     padding: 0;
 }
-.icon-menu-burger {
+
+.open-burger-icon {
     stroke: var(--main-color-theme-light);
+    width: 28px;
+    height: 28px;
 }
+
 @media screen and (min-width: 768px) {
-    .icon-menu-burger {
+    .open-burger-icon {
         width: 32px;
         height: 32px;
     }
-    .header-container {
-        padding-top:24px ;
-        padding-bottom:24px ;
-    }
 }
+
 @media screen and (min-width: 1200px) {
-    .open-menu-burger {
+    .btn-open-burger {
         display: none;
     }
 }
