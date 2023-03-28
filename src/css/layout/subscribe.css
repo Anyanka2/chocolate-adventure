@@ -33,6 +33,7 @@
 
 @media (min-width: 1200px) {
     .subscribe {
+        max-width: 1440px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
     url(/img/footer/footer.jpg);
     }
@@ -47,7 +48,7 @@
 } 
 
 
-.container {
+.subs-container {
     color: var(--main-color-theme-dark);
 }
 
