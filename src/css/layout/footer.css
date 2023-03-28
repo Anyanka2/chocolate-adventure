@@ -65,6 +65,7 @@
   height: 22px;
   fill: var(--main-color-theme-dark);
   stroke: var(--main-color-theme-light);
+  transition: stroke var(--transition-hover);
 }
 @media (min-width: 768px) {
   .icon-footer {
