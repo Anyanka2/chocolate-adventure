@@ -38,7 +38,19 @@
     .advantages-item:first-child {
         margin-right: 60px;
         margin-bottom: 32px;
+  }
+    .advantages-item {
+        margin-bottom: 0;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages-set {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        
+ }
 
     .advantages-item:nth-child(2) {
         margin-right: 28px;

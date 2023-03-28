@@ -63,7 +63,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1200px;
-    margin: 0 auto;
+    
   }
 }
 @media screen and (min-device-pixel-ratio: 2),
