@@ -1,3 +1,16 @@
+.section {
+  
+}
+@media (min-width: 768px) {
+  section {
+    
+  }
+}
+@media (min-width: 1200px) {
+  section {
+    
+  }
+}
 .hero {
   background-image: linear-gradient(
       180deg,
@@ -9,6 +22,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 400px;
+    margin: 0 auto;
 
   margin-bottom: 72px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -37,6 +52,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 688px;
+   
+    margin-bottom:50px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -62,7 +80,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1200px;
+    max-width: 1140px;
+    
+    margin-bottom: 72px;
     
   }
 }
@@ -144,7 +164,7 @@
   line-height: 1.21;
   border: none;
   transition-property: background-color, color;
-  transition-duration: 250ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
@@ -157,6 +177,7 @@
 .hero-button-buy:hover {
   background-color: var(--hover-color-light);
   color: var(--hover-color-dark);
+  animation: var(--button-animation);
 }
 .hero-button-made {
   width: 159px;
@@ -183,6 +204,7 @@
 .hero-button-made:hover {
   border: 1px solid var(--hover-color-dark);
   color: var(--hover-color-dark);
+  animation: var(--button-animation);
 }
 .scroll-down-icon {
   position: relative;
@@ -220,10 +242,12 @@
 
 .scroll-down-icon:hover .scroll-down {
   color: var(--hover-color-dark);
+  
 }
 .scroll-down-icon:hover .icon-scroll {
   background-color: var(--hover-color-dark);
   fill: var(--main-color-theme-dark);
+  
 }
 /* modal buy now */
 .backdrop-buy {
@@ -326,7 +350,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   width: 96px;
-  padding: 8px 27px;
+  padding: 8px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -409,7 +433,7 @@
   line-height: 1.22;
 }
 .user-phone-number {
-  width: 321px;
+  
   padding-left: 177px;
 }
 .user-phone-number::placeholder {
