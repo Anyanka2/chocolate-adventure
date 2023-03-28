@@ -1,23 +1,148 @@
+<!--  HERO section -->
 <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">hero section</h1>
-      <p class="hero-info">
-        Treat yourself or a loved one to our finest ingredients for a moment of
-        pure delight!
-      </p>
-      <div class="button-link-anchor">
-        <div class="button-link">
-          <button type="button" class="hero-button-buy">Buy now</button>
-          <button type="button" class="hero-button-made">
-            <a href="#made"> How it's made</a>
-          </button>
-        </div>
-        <div class="scroll-down-icon">
-          <a class="scroll-down" href="#link-footer"> scroll down</a>
-          <svg class="icon-scroll" width="38" height="38">
-            <use href="/img/hero/icon.svg#icon-scroll-down"></use>
-          </svg>
-        </div>
+  <div class="container">
+    <h1 class="hero-title">hero section</h1>
+    <p class="hero-info">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </p>
+    <div class="button-link-anchor">
+      <div class="button-link">
+        <button class="hero-button-buy" type="button" data-modal-open-buy>
+          Buy now
+        </button>
+        <button type="button" class="hero-button-made">
+          <a href="#made"> How it's made</a>
+        </button>
+      </div>
+      <div class="scroll-down-icon">
+        <a class="scroll-down" href="#link-footer"> scroll down</a>
+        <svg class="icon-scroll" width="38" height="38">
+          <use href="/img/hero/icons.svg#icon-scroll-down"></use>
+        </svg>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<div class="backdrop is-hidden" data-moda-buy>
+  <div class="modal-buy">
+    <button class="modal-close" type="button" data-modal-close-buy>
+      <svg class="close">
+        <use href="/img/hero/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <form class="form-buy" name="buy-now" autocomplete="on" novalidate>
+      <h2 class="title-modal"><samp class="title-buy">Buy</samp> now</h2>
+      <ul class="change-product">
+        <li class="list-product">
+          <img
+            class="product"
+            width="120"
+            src="/img/top-sellers/buy-now-1.jpg"
+            alt="pieces of dark chocolate"
+            srcset="
+              /img/top-sellers/buy-now-1@2x.jpg 2x,
+              /img/top-sellers/buy-now-1.jpg    1x
+            "
+          />
+          <button class="mass-ch" type="button">100 g</button>
+        </li>
+        <li class="list-product">
+          <img
+            class="product"
+            width="120"
+            src="/img/top-sellers/buy-now-2.jpg"
+            alt="pieces of white and milk chocolate"
+            srcset="
+              /img/top-sellers/buy-now-2@2x.jpg 2x,
+              /img/top-sellers/buy-now-2.jpg    1x
+            "
+          />
+          <button class="mass-ch" type="button">200 g</button>
+        </li>
+        <li class="list-product">
+          <img
+            class="product"
+            width="120"
+            src="/img/top-sellers/buy-now-3.jpg"
+            alt="bar of dark chocolate"
+            srcset="
+              /img/top-sellers/buy-now-3@2x.jpg 2x,
+              /img/top-sellers/buy-now-3.jpg    1x
+            "
+          />
+          <button class="mass-ch" type="button">300 g</button>
+        </li>
+      </ul>
+      <div class="container-form">
+        <label class="form-info" for="user-name">Personal information</label>
+        <div class="first-last-name">
+          <input
+            class="confidential-info confidential-info-name"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="confidential-info confidential-info-name"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Surname"
+            required
+          />
+        </div>
+        <label class="form-info" for="user-email">Email</label>
+        <input
+          class="confidential-info"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Enter your email"
+          required
+        />
+        <label class="form-info" for="user-phone">Phone number</label>
+        <div class="icon-decoration">
+          <div class="kod-country">
+            <svg class="icon-phone">
+              <use href="/img/hero/icons.svg#icon-ukraine">+380</use>
+            </svg>
+            <samp class="kod">+380</samp>
+          </div>
+          <input
+            class="confidential-info user-phone-number"
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            placeholder="Phone number"
+            required
+          />
+        </div>
+        <label class="form-info" for="user-card"> Card number</label>
+        <div class="icon-decoration">
+          <input
+            class="confidential-info"
+            type="number"
+            name="user-card"
+            id="user-card"
+            placeholder="Enter card"
+            required
+          />
+          <svg class="icon-mastercard">
+            <use href="/img/hero/icons.svg#icon-mastercard"></use>
+          </svg>
+        </div>
+        <label class="form-info" for="user-comment">Comment </label>
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          placeholder="Enter text"
+          required
+        ></textarea>
+      </div>
+      <button class="hero-button-buy" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
