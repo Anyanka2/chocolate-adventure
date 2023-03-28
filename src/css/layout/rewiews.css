@@ -1,32 +1,80 @@
 .rewiews{
-    margin-top: 128px;
-    margin-bottom: 128px;
+    margin-top: 72px;
+    margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .rewiews {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .rewiews {
+            margin-top: 128px;
+            margin-bottom: 128px;
+        }
 }
 
 .section-title.for-rewiews{
-    margin-bottom: 50px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .section-title.for-rewiews {
+            margin-bottom: 50px;
+        }
 }
 
 .rewiews-list{
     padding-top: 50px;
     display:flex;
     overflow: hidden;
-    gap:28px;
-    margin-bottom: 32px;
+    gap:16px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .rewiews-list {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .rewiews-list{
+        margin-bottom: 32px;
+        gap: 28px;
+    }
 }
 
 .rewiews-list-item{
     position: relative;
     box-sizing: border-box;
-    padding: 56px 24px 42px 24px;
+    padding: 56px 18px 42px 18px;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 360px;
+    min-width: 335px;
     background: #FFFFFF;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .rewiews-list-item {
+        padding: 56px 18px 26px 14px;
+        min-width: 344px;
+        }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .rewiews-list-item {
+        padding: 56px 24px 42px 24px;
+        min-width: 360px;
+    }
 }
 
 .rewiews-author-photo{
@@ -50,21 +98,36 @@
 }
 
 .slider-btn-list{
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
+
+@media screen and (min-width: 768px) {
+    .slider-btn-list {
+            margin-bottom: 50px;
+        }
+}
+
 .review-btn{
     padding: 0;
     display: block;
     margin:0 auto;
     border: 1px solid var(--hover-color-dark);
     border-radius: 100px;
-    width:222px;
-    height: 50px;
+    width:165px;
+    height: 41px;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 1.21;
 }
 
+@media screen and (min-width: 768px) {
+    .review-btn {
+        width: 222px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
 .review-btn:hover{
     background-color:var(--hover-color-dark) ;
     color:var(--main-color-theme-dark);
