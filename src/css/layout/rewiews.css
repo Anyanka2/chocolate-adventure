@@ -118,6 +118,9 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+    transition-property: background-color, color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -132,6 +135,7 @@
     background-color:var(--hover-color-dark) ;
     color:var(--main-color-theme-dark);
     border: none;
+    animation: var(--button-animation);
 }
 
 .rewiews-modal-form{
