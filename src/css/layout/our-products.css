@@ -53,9 +53,9 @@
 
 
 
-@media screen and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
     .slider-list-div {
-        padding-left: 100px;
+        transform: translate(calc(100%/8), 0);
         max-width: 570px;
     }
 
@@ -63,7 +63,7 @@
 
 @media screen and (max-width:767px) {
     .slider-list-div {
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .desktop-added {
@@ -81,14 +81,14 @@
 
 @media screen and (min-width: 768px) {
     .slider-list-element {
-        padding: 31px 21px;
+        padding: 31px 19px;
 
     }
 }
 
 @media screen and (min-width: 1200px) {
     .slider-list-element {
-        padding: 31px 21px;
+        padding: 31px 19px;
     }
 }
 
