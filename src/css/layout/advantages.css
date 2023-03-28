@@ -84,16 +84,19 @@
         top: 25%;    
     }
 
+    .advantages-container {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
 }
 
 .advantages-item:first-child::before {
     display: none;
 }
 
-.advantages-container {
-    padding-right: 50px;
-    padding-left: 50px;
-}
+
+
 
 
 
