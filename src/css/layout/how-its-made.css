@@ -71,7 +71,7 @@
 .process-item::before {
     position: absolute;
     left: -16px;
-    top: 4px;
+    top: 5px;
     display: block;
     width: 8px;
     height: 8px;
@@ -79,6 +79,13 @@
     border: 1px solid #ECEDED;
     border-radius: 50%;
     content: '';
+}
+
+.process-item:last-child::before {
+    top: 4px;
+}
+.process-item:nth-child(3)::before {
+    top: 4px;
 }
 
 .process-list {
