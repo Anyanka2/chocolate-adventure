@@ -52,12 +52,12 @@
 
 @media screen and (min-width: 1200px) {
     .advantages-item:first-child {
-        margin-right: 18px;
+        margin-right: 88px;
         margin-bottom: 0;
     }
 
     .advantages-item:nth-child(2) {
-        margin-right: 18px;
+        margin-right: 88px;
     }
 
     .advantages-item:last-child {
@@ -66,43 +66,35 @@
 }
 
 /* Деск-топ */
+.advantages-item {
+    position: relative;
+}
 
 @media screen and (min-width: 1200px) {
 
-    .advantages-item::after {
-        display: inline-block;
+    .advantages-item::before {
+        display: block;
         content: '';
         border: 1px solid rgba(255, 255, 255, 0.5);
         position: absolute;
-        width: 124px;
-        height: 0px;
-        transform: rotate(90deg);
-        left: 50%;
-        right: 0;
-        bottom: 10px;
-        top: 1%;    
-    
-    }
-}
-
-    .advantages-container {
-        padding-right: 50px;
-        padding-left: 50px;
+        width: 0;
+        height: 124px;
+        left: -25%;
+        right: 70px;
+        top: 25%;    
     }
 
-@media screen and (min-width: 1200px) {
-    .advantages-item::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        width: 124px;
-        height: 0px;
-        transform: rotate(90deg);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        top: 50%;
-        left: auto;
-    }
 }
+
+.advantages-item:first-child::before {
+    display: none;
+}
+
+.advantages-container {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
 
 
 .advantages-icon {
