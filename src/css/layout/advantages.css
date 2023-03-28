@@ -1,3 +1,4 @@
+/* Стили секции Advantages */
 .advantages {
     background-color:var(--dark-background-color);
     padding-top: 20px;
@@ -34,6 +35,7 @@
     margin-bottom: 0;
 }
 
+/* Таблетка */
 @media screen and (min-width: 768px) {
     .advantages-item:first-child {
         margin-right: 60px;
@@ -45,6 +47,10 @@
         margin-bottom: 0;
     }
 }
+
+/* Деск-топ */
+
+
 
 
 
