@@ -22,10 +22,6 @@
   margin-right: auto;
   max-width: 339px;
   text-align: center;
-  /* видалити */
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 768px) {
@@ -168,10 +164,41 @@
   color: var(--main-color-theme-light);
   background-color: var(--main-color-theme-dark);
   transform: rotateY(180deg);
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 1199px) {
   .back-card {
     display: none;
   }
+}
+
+.unique-card-container {
+  padding: 28px;
+}
+
+.unique-secondary-title {
+  margin-bottom: 8px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.back-card-btn {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 14px;
+}
+
+.unique-btn {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.unique-btn:last-child {
+  margin-left: 6px;
 }
