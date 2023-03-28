@@ -240,7 +240,7 @@
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 500ms, visibility 500ms;
 }
-.backdrop.is-hidden {
+.backdrop-buy.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
