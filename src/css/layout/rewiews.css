@@ -1,14 +1,74 @@
-.rewiews-list{
-    display:flex;
+.rewiews{
+    margin-top: 128px;
+    margin-bottom: 128px;
 }
 
+.section-title.for-rewiews{
+    margin-bottom: 50px;
+}
+
+.rewiews-list{
+    padding-top: 50px;
+    display:flex;
+    overflow: hidden;
+    gap:28px;
+    margin-bottom: 32px;
+}
+
+.rewiews-list-item{
+    position: relative;
+    box-sizing: border-box;
+    padding: 56px 24px 42px 24px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 360px;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.rewiews-author-photo{
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-150%);
+}
+
+.rewiews-author-name{
+    margin-bottom: 24px;
+    font-size:18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+.rewiews-author-text{
+    color: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.slider-btn-list{
+    margin-bottom: 50px;
+}
 .review-btn{
+    padding: 0;
     display: block;
     margin:0 auto;
     border: 1px solid var(--hover-color-dark);
     border-radius: 100px;
     width:222px;
     height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.review-btn:hover{
+    background-color:var(--hover-color-dark) ;
+    color:var(--main-color-theme-dark);
+    border: none;
 }
 
 .rewiews-modal-form{
