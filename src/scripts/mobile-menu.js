@@ -26,6 +26,4 @@
       bodyScrollLock.enableBodyScroll(document.body);
     });
 })();
-  .social-icon-desktop-tablet:hover,
-.social-list-link:focus > .social-icon-desktop-tablet {
-  stroke: var(--icon-color-active);
+  
