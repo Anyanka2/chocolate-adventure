@@ -26,6 +26,7 @@
 .top-sellers-img {
   transition: transform var(--transition-hover);
   border-radius: 15px;
+  width: 100%;
 }
 .top-sellers-item-desk {
   display: none;
