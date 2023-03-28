@@ -226,7 +226,7 @@
   fill: var(--main-color-theme-dark);
 }
 /* modal buy now */
-.backdrop {
+.backdrop-buy {
   position: fixed;
   z-index: 5;
   top: 0;
