@@ -226,9 +226,9 @@
   fill: var(--main-color-theme-dark);
 }
 /* modal buy now */
-.backdrop {
+.backdrop-buy {
   position: fixed;
-  z-index: 5;
+  z-index: 200;
   top: 0;
   left: 0;
   display: flex;
@@ -240,7 +240,7 @@
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 500ms, visibility 500ms;
 }
-.backdrop.is-hidden {
+.backdrop-buy.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
