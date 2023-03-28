@@ -38,9 +38,6 @@
     margin-bottom: 0;
   }
 }
-.color-tagline {
-  color: var(--hover-color-dark);
-}
 .footer-contacts {
   display: flex;
   justify-content: space-between;
