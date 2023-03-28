@@ -57,7 +57,7 @@ function main() {
         move = -359;
     }
     else {
-        move = -292;
+        move = -288;
     }
     switch (current_btn) {
         case 0:
