@@ -228,7 +228,7 @@
 /* modal buy now */
 .backdrop-buy {
   position: fixed;
-  z-index: 5;
+  z-index: 200;
   top: 0;
   left: 0;
   display: flex;
