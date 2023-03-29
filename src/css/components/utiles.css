@@ -71,16 +71,20 @@ body {
   }
 
 
-@media (min-width: 375px) {
+@media screen and (min-device-width:768px),
+screen and (min-width:768px) {
   .container {
+    width: 100%;
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-device-width:1200px),
+screen and (min-width:1200px) {
   .container {
+    width: 100%;
     max-width: 1200px;
   }
 }
