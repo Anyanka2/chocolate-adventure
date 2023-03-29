@@ -16,8 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/chocolate-adventure/assets/index-d497bda0.js"></script>
-    <link rel="stylesheet" href="/chocolate-adventure/assets/index-827c9b8b.css">
+    <script type="module" crossorigin src="/chocolate-adventure/assets/index-90b60141.js"></script>
+    <link rel="stylesheet" href="/chocolate-adventure/assets/index-9091be74.css">
   </head>
   <body>
     <!-- Header -->
@@ -213,26 +213,30 @@
           required
         ></textarea>
       </div>
-      <button class="hero-button-buy" hero-button-buy-submit type="button">Submit</button>
+      <button class="hero-button-buy" hero-button-buy-submit type="button">
+        Submit
+      </button>
     </form>
   </div>
 </div>
 <div class="backdrop-buy is-hidden" top-sellers-thankyou>
-<div class="rewiews-modal-popup-buy">
-  <button class="modal-close" type="button" data-modal-close-thankyou>
-    <svg class="close">
-      <use href="/chocolate-adventure/assets/icons-17c49d66.svg#icon-cross"></use>
-    </svg>
-  </button>
-  <div class="rewiew-popup-info">
-  <h3 class="rewiew-popup-title-buy">thank you!</h3>
-  <p class="rewiew-popup-text-buy">
-    We are glad that you ordered our chocolate and we are giving you a <samp class="discount">20%</samp> 
-    discount on all our products.
-  </p>
+  <div class="rewiews-modal-popup-buy">
+    <button class="modal-close" type="button" data-modal-close-thankyou>
+      <svg class="close">
+        <use href="/chocolate-adventure/assets/icons-17c49d66.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="rewiew-popup-info">
+      <h3 class="rewiew-popup-title-buy">thank you!</h3>
+      <p class="rewiew-popup-text-buy">
+        We are glad that you ordered our chocolate and we are giving you a
+        <samp class="discount">20%</samp>
+        discount on all our products.
+      </p>
+    </div>
+  </div>
 </div>
-</div>
-</div>
+
       <!-- Advantages -->
 <section class="advantages">
     <div class="advantages-container container">
@@ -814,7 +818,7 @@
   </div>
 </section>
 
-      <!--   rewiews section  -->
+      <!--   Rewiews section  -->
 <section class="rewiews" id="chocolate-is-loved">
   <div class="container">
     <h2 class="section-title for-rewiews">
@@ -983,14 +987,23 @@
             name="user-message"
             id="user-message"
             placeholder="Enter text"
+            required
           ></textarea>
         </div>
 
-        <button class="rewiew-form-button" type="submit">Send</button>
+        <button class="rewiew-form-button" type="button" button-rewiews-send>
+          Send
+        </button>
       </form>
     </div>
+  </div>
+  <div class="backdrop-rewiews is-hidden" rewiews-thankyou>
     <div class="rewiews-modal-popup">
-      <button class="modal-close" type="button" data-modal-close-rewiews>
+      <button
+        class="modal-close"
+        type="button"
+        data-modal-close-rewiews-thankyou
+      >
         <svg class="modal-button-icon">
           <use href="/chocolate-adventure/assets/icons-17c49d66.svg#icon-cross"></use>
         </svg>
@@ -1006,62 +1019,76 @@
       <!-- Subscribe -->
 
 <section class="subscribe section">
-    <div class="container subs-container">
+  <div class="container subs-container">
     <h2 class="subscribe-title section-title">
-        explore our new <br> chocolate first
+      explore our new <br />
+      chocolate first
     </h2>
     <p class="subscribe-subtitle">
-        From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
     </p>
-    <button type="button" class="subsc-btn dark-btn" data-modal-open>Subscribe</button>
-</div>
+    <button type="button" class="subsc-btn dark-btn" data-modal-open>
+      Subscribe
+    </button>
+  </div>
 </section>
 
 <!--Modal window-->
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal-btn-subs" type="button" data-modal-close>
-        <svg class="modal-icon-subs" width="24" height="24">
-            <use href="/chocolate-adventure/assets/icons-8d4f9080.svg#icon-x"></use>
-        </svg>
+  <div class="modal">
+    <button class="modal-btn-subs" type="button" data-modal-close>
+      <svg class="modal-icon-subs" width="24" height="24">
+        <use href="/chocolate-adventure/assets/icons-8d4f9080.svg#icon-x"></use>
+      </svg>
     </button>
-       
-        <picture class="subs-modal-img">
-            <source 
-              srcset="/chocolate-adventure/assets/pop-up-2-2321ac1c.jpg 1x, /chocolate-adventure/assets/pop-up-2@2x-28e59ba5.jpg 2x"
-              media="(min-width:1200px)"
-            />
-            <source
-              srcset="/chocolate-adventure/assets/pop-up-2-2321ac1c.jpg 1x, /chocolate-adventure/assets/pop-up-2@2x-28e59ba5.jpg 2x"
-              media="(min-width: 768px)"
-            />
 
-            <source
-              srcset="/chocolate-adventure/assets/pop-up-2-mobile-1339a007.jpg 1x, /chocolate-adventure/assets/pop-up-2-mobile@2x-5142c690.jpg 2x"
-              media="(min-width: 375px)"
-            />
+    <picture class="subs-modal-img">
+      <source
+        srcset="/chocolate-adventure/assets/pop-up-2-2321ac1c.jpg 1x, /chocolate-adventure/assets/pop-up-2@2x-28e59ba5.jpg 2x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="/chocolate-adventure/assets/pop-up-2-2321ac1c.jpg 1x, /chocolate-adventure/assets/pop-up-2@2x-28e59ba5.jpg 2x"
+        media="(min-width: 768px)"
+      />
 
-            <img
-              class=""
-              src="../img/pop-up/pop-up-2.jpg"
-              alt="shocolate-bar"
-              width=""
-            />
-          </picture>
-        <div class="modal-input">
-        <strong class="modal-title">explore our <br> <span class="accent">new chocolate</span> first</strong>
-        <form class="submit-form" name="submit_form">
-          <div class="modal-btn-double">
-            <input  class="submit-input" type="email" name="submit_form" placeholder="Enter your email" required>
-            <button class="submit-btn btn" type="submit" data-modal-close>Submit</button>
-          </div>
-        </form>
+      <source
+        srcset="/chocolate-adventure/assets/pop-up-2-mobile-1339a007.jpg 1x, /chocolate-adventure/assets/pop-up-2-mobile@2x-5142c690.jpg 2x"
+        media="(min-width: 375px)"
+      />
 
-      </div>
+      <img
+        class=""
+        src="../img/pop-up/pop-up-2.jpg"
+        alt="shocolate-bar"
+        width=""
+      />
+    </picture>
+    <div class="modal-input">
+      <strong class="modal-title"
+        >explore our <br />
+        <span class="accent">new chocolate</span> first</strong
+      >
+      <form class="submit-form" name="submit_form">
+        <div class="modal-btn-double">
+          <input
+            class="submit-input"
+            type="email"
+            name="submit_form"
+            placeholder="Enter your email"
+          />
+          <button class="submit-btn btn" type="submit" data-modal-close>
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
-    </div>
+  </div>
+</div>
 
-    
     </main>
 
     <!--Footer-->
