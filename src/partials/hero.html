@@ -24,6 +24,7 @@
     </div>
   </div>
 </section>
+<!-- Modal buy -->
 <div class="backdrop-buy is-hidden" data-moda-buy>
   <div class="modal-buy">
     <button class="modal-close-buy" type="button" data-modal-close-buy>
@@ -33,50 +34,62 @@
     </button>
     <form class="form-buy" name="buy-now" autocomplete="on" novalidate>
       <h2 class="title-modal"><samp class="title-buy">Buy</samp> now</h2>
-
-      <ul class="change-product">
-        <li class="list-product">
-          <img
-            class="product"
-            width="120"
-            src="/img/top-sellers/buy-now-1.jpg"
-            alt="pieces of dark chocolate"
-            srcset="
-              /img/top-sellers/buy-now-1@2x.jpg 2x,
-              /img/top-sellers/buy-now-1.jpg    1x
-            "
-          />
-          <button class="mass-ch" type="button">100 g</button>
-        </li>
-
-        <li class="list-product">
-          <img
-            class="product"
-            width="120"
-            src="/img/top-sellers/buy-now-2.jpg"
-            alt="pieces of white and milk chocolate"
-            srcset="
-              /img/top-sellers/buy-now-2@2x.jpg 2x,
-              /img/top-sellers/buy-now-2.jpg    1x
-            "
-          />
-          <button class="mass-ch" type="button">200 g</button>
-        </li>
-
-        <li class="list-product">
-          <img
-            class="product"
-            width="120"
-            src="/img/top-sellers/buy-now-3.jpg"
-            alt="bar of dark chocolate"
-            srcset="
-              /img/top-sellers/buy-now-3@2x.jpg 2x,
-              /img/top-sellers/buy-now-3.jpg    1x
-            "
-          />
-          <button class="mass-ch" type="button">300 g</button>
-        </li>
-      </ul>
+      <div class="slider-container-buy">
+        <div class="slider-buy">
+          <div class="slides-buy">
+            <div id="slides__1" class="slide-buy">
+              <img
+                class="product"
+                width="120"
+                src="/img/top-sellers/buy-now-1.jpg"
+                alt="pieces of dark chocolate"
+                srcset="
+                  /img/top-sellers/buy-now-1@2x.jpg 2x,
+                  /img/top-sellers/buy-now-1.jpg    1x
+                "
+              />
+              <button class="mass-ch" type="button">100 g</button>
+              <a class="slide__prev" href="#slides__3" title="Next"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <div id="slides__2" class="slide-buy">
+              <img
+                class="product"
+                width="120"
+                src="/img/top-sellers/buy-now-2.jpg"
+                alt="pieces of white and milk chocolate"
+                srcset="
+                  /img/top-sellers/buy-now-2@2x.jpg 2x,
+                  /img/top-sellers/buy-now-2.jpg    1x
+                "
+              />
+              <button class="mass-ch" type="button">200 g</button>
+              <a class="slide__prev" href="#slides__1" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide-buy">
+              <img
+                class="product"
+                width="120"
+                src="/img/top-sellers/buy-now-3.jpg"
+                alt="bar of dark chocolate"
+                srcset="
+                  /img/top-sellers/buy-now-3@2x.jpg 2x,
+                  /img/top-sellers/buy-now-3.jpg    1x
+                "
+              />
+              <button class="mass-ch" type="button">300 g</button>
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__1" title="Next"></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__nav">
+          <a class="slider__navlink" href="#slides__1"></a>
+          <a class="slider__navlink" href="#slides__2"></a>
+          <a class="slider__navlink" href="#slides__3"></a>
+        </div>
+      </div>
       <div class="container-form">
         <label class="form-info" for="user-name">Personal information</label>
         <div class="first-last-name">
@@ -109,7 +122,7 @@
         <label class="form-info" for="user-phone">Phone number</label>
         <div class="icon-decoration">
           <div class="kod-country">
-            <svg class="icon-phone">
+            <svg class="icon-phone-buy">
               <use href="/img/hero/icons.svg#icon-ukraine">+380</use>
             </svg>
             <samp class="kod">+380</samp>
@@ -139,6 +152,7 @@
         </div>
         <label class="form-info" for="user-comment">Comment </label>
         <textarea
+          class="comment-buy"
           name="user-comment"
           id="user-comment"
           placeholder="Enter text"
@@ -151,16 +165,17 @@
     </form>
   </div>
 </div>
+<!-- Pop up -->
 <div class="backdrop-buy is-hidden" top-sellers-thankyou>
-  <div class="rewiews-modal-popup-buy">
+  <div class="modal-popup-buy">
     <button class="modal-close" type="button" data-modal-close-thankyou>
       <svg class="close">
         <use href="/img/hero/icons.svg#icon-cross"></use>
       </svg>
     </button>
-    <div class="rewiew-popup-info">
-      <h3 class="rewiew-popup-title-buy">thank you!</h3>
-      <p class="rewiew-popup-text-buy">
+    <div class="popup-info">
+      <h3 class="popup-title-buy">thank you!</h3>
+      <p class="popup-text-buy">
         We are glad that you ordered our chocolate and we are giving you a
         <samp class="discount">20%</samp>
         discount on all our products.
