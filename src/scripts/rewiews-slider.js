@@ -1,6 +1,6 @@
 const refs = {
-    cards: document.getElementsByClassName("slider-list-element"),
-    btns: document.getElementsByClassName("products-slider-btn")
+    cards: document.getElementsByClassName("rewiews-list-item"),
+    btns: document.getElementsByClassName("rewiew-slider-btn")
 };
 for (let i = 4; i < refs.cards.length; i++) {
     refs.cards[i].style.opacity = 0;
@@ -44,7 +44,6 @@ function moveTo() {
             }
 }
 
-
 // window.onresize = function () {
 //     defaultPosition();
 // }
@@ -53,10 +52,14 @@ function moveTo() {
 
 function main() {
     if (document.documentElement.clientWidth < 768) {
-        move = -359;
+        move = -351;
+    }
+    else if (document.documentElement.clientWidth >= 768
+        && document.documentElement.clientWidth < 1200) {
+        move = -360;
     }
     else {
-        move = -288;
+        move = -388;
     }
     switch (current_btn) {
         case 0:
