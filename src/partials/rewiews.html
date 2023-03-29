@@ -1,4 +1,4 @@
-<!--   rewiews section  -->
+<!--   Rewiews section  -->
 <section class="rewiews" id="chocolate-is-loved">
   <div class="container">
     <h2 class="section-title for-rewiews">
@@ -167,14 +167,23 @@
             name="user-message"
             id="user-message"
             placeholder="Enter text"
+            required
           ></textarea>
         </div>
 
-        <button class="rewiew-form-button" type="submit">Send</button>
+        <button class="rewiew-form-button" type="button" button-rewiews-send>
+          Send
+        </button>
       </form>
     </div>
+  </div>
+  <div class="backdrop-rewiews is-hidden" rewiews-thankyou>
     <div class="rewiews-modal-popup">
-      <button class="modal-close" type="button" data-modal-close-rewiews>
+      <button
+        class="modal-close"
+        type="button"
+        data-modal-close-rewiews-thankyou
+      >
         <svg class="modal-button-icon">
           <use href="/img/hero/icons.svg#icon-cross"></use>
         </svg>
