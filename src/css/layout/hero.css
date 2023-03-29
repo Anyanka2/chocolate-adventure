@@ -174,10 +174,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: color var(--transition-hover), border var(--transition-hover);
+  }
 @media (min-width: 768px) {
   .hero-button-made {
     width: 183px;
@@ -205,10 +203,8 @@
   background-color: var(--main-color-theme-dark);
   fill: var(--hover-color-dark);
   border-radius: 50%;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: background-color var(--transition-hover), fill var(--transition-hover);
+  }
 .scroll-down {
   z-index: 1;
   color: var(--main-color-theme-dark);
@@ -218,10 +214,8 @@
   line-height: 1.28;
   padding: 10px 45px 10px 0;
   letter-spacing: -0.03em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: color var(--transition-hover);
+  }
 
 .scroll-down-icon:hover .scroll-down {
   color: var(--hover-color-dark);
@@ -277,9 +271,7 @@
   height: 28px;
   background-color: transparent;
   border: none;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-hover);
 }
 .modal-close:hover {
   fill: var(--hover-color-dark);
@@ -364,10 +356,8 @@
   outline: none;
   padding: 0;
   padding-left: 24px;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: border var(--transition-hover);
+  }
 .confidential-info-name {
   width: 100%;
 }
@@ -431,12 +421,22 @@ textarea {
   padding: 22px 0 0 24px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
+  transition: border var(--transition-hover);
 }
 textarea::placeholder {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
+}
+.list-product:hover,
+.mass-ch:focus,
+textarea:hover, /* тут */
+textarea:focus,
+.confidential-info:hover,
+.confidential-info:focus {
+  outline: none;
+  border: 1.5px solid var(--hover-color-dark);
 }
 .rewiews-modal-popup-buy {
   padding-top: 84px;
@@ -453,7 +453,7 @@ textarea::placeholder {
   background-position-y: 120px;
   background-repeat: no-repeat;
   background-color: var(--hover-color-dark);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-hover);
   box-shadow: 0 1px 1px #00000024, 0 1px 3px #0000001f, 0 2px 1px #0003;
   border-radius: 15px;
 }
@@ -464,8 +464,6 @@ textarea::placeholder {
     background-position-y: 96px;
     max-width: 516px;
     max-height: 414px;
-    padding-top: 154px;
-    padding-left: 163px;
     padding: 154px 44px 154px 163px;
   }
 }
@@ -514,5 +512,5 @@ textarea::placeholder {
 }
 .modal-button-icon-buy {
   width: 8px;
-    height: 8px;
+  height: 8px;
 }

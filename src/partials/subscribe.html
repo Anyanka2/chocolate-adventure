@@ -1,68 +1,75 @@
 <!-- Subscribe -->
 
 <section class="subscribe section">
-    <div class="container subs-container">
+  <div class="container subs-container">
     <h2 class="subscribe-title section-title">
-        explore our new <br> chocolate first
+      explore our new <br />
+      chocolate first
     </h2>
     <p class="subscribe-subtitle">
-        From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
     </p>
-    <button type="button" class="subsc-btn dark-btn" data-modal-open>Subscribe</button>
-</div>
+    <button type="button" class="subsc-btn dark-btn" data-modal-open>
+      Subscribe
+    </button>
+  </div>
 </section>
 
 <!--Modal window-->
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal-btn-subs" type="button" data-modal-close>
-        <svg class="modal-icon-subs" width="24" height="24">
-            <use href="/img/icons.svg#icon-x"></use>
-        </svg>
+  <div class="modal">
+    <button class="modal-btn-subs" type="button" data-modal-close>
+      <svg class="modal-icon-subs" width="24" height="24">
+        <use href="/img/icons.svg#icon-x"></use>
+      </svg>
     </button>
-       
-        <picture class="subs-modal-img">
-            <source 
-              srcset="
-                /img/pop-up/pop-up-2.jpg 1x,
-                /img/pop-up/pop-up-2@2x.jpg 2x
-              "
-              media="(min-width:1200px)"
-            />
-            <source
-              srcset="
-              /img/pop-up/pop-up-2.jpg 1x,
-              /img/pop-up/pop-up-2@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
 
-            <source
-              srcset="
-              /img/pop-up/pop-up-2-mobile.jpg 1x,
-              /img/pop-up/pop-up-2-mobile@2x.jpg 2x
-              "
-              media="(min-width: 375px)"
-            />
+    <picture class="subs-modal-img">
+      <source
+        srcset="/img/pop-up/pop-up-2.jpg 1x, /img/pop-up/pop-up-2@2x.jpg 2x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="/img/pop-up/pop-up-2.jpg 1x, /img/pop-up/pop-up-2@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
 
-            <img
-              class=""
-              src="../img/pop-up/pop-up-2.jpg"
-              alt="shocolate-bar"
-              width=""
-            />
-          </picture>
-        <div class="modal-input">
-        <strong class="modal-title">explore our <br> <span class="accent">new chocolate</span> first</strong>
-        <form class="submit-form" name="submit_form">
-          <div class="modal-btn-double">
-            <input  class="submit-input" type="email" name="submit_form" placeholder="Enter your email" required>
-            <button class="submit-btn btn" type="submit" data-modal-close>Submit</button>
-          </div>
-        </form>
+      <source
+        srcset="
+          /img/pop-up/pop-up-2-mobile.jpg    1x,
+          /img/pop-up/pop-up-2-mobile@2x.jpg 2x
+        "
+        media="(min-width: 375px)"
+      />
 
-      </div>
+      <img
+        class=""
+        src="../img/pop-up/pop-up-2.jpg"
+        alt="shocolate-bar"
+        width=""
+      />
+    </picture>
+    <div class="modal-input">
+      <strong class="modal-title"
+        >explore our <br />
+        <span class="accent">new chocolate</span> first</strong
+      >
+      <form class="submit-form" name="submit_form">
+        <div class="modal-btn-double">
+          <input
+            class="submit-input"
+            type="email"
+            name="submit_form"
+            placeholder="Enter your email"
+          />
+          <button class="submit-btn btn" type="submit" data-modal-close>
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
-    </div>
-
-    
+  </div>
+</div>
