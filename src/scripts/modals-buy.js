@@ -1,30 +1,32 @@
 (() => {
   const refs = {
-    openModalBtns: document.querySelectorAll("[data-modal-open-buy]"),
-    closeModalBtn: document.querySelector("[data-modal-close-buy]"),
-    submitBtn: document.querySelector("[hero-button-buy-submit]"),
-    modal: document.querySelector("[data-moda-buy]"),
-    postModal: document.querySelector("[top-sellers-thankyou]")
+    openBuyModalBtns: document.querySelectorAll("[data-modal-open-buy]"),
+    closeBuyModalBtn: document.querySelector("[data-modal-close-buy]"),
+    closeModalThankBtn: document.querySelector("[data-modal-close-thankyou]"),
+    submitBuyBtn: document.querySelector("[hero-button-buy-submit]"),
+    buyModal: document.querySelector("[data-moda-buy]"),
+    thankModal: document.querySelector("[top-sellers-thankyou]")
   };
 
-  refs.openModalBtns.forEach(addToggleEvent);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-  refs.submitBtn.addEventListener("click", close);
+  refs.openBuyModalBtns.forEach(addToggleEvent);
+  refs.closeBuyModalBtn.addEventListener("click", toggleBuyModal);
+  refs.closeModalThankBtn.addEventListener("click", toggleThankModal);
+  refs.submitBuyBtn.addEventListener("click", closeBuyModalAndShowThankyou);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+  function toggleBuyModal() {
+    refs.buyModal.classList.toggle("is-hidden");
   }
 
-  function close(){
-    toggleModal();
-    togglePostModal();
+  function closeBuyModalAndShowThankyou(){
+    toggleBuyModal();
+    toggleThankModal();
   }
 
-  function togglePostModal() {
-    refs.postModal.classList.toggle("is-hidden");
+  function toggleThankModal() {
+    refs.thankModal.classList.toggle("is-hidden");
   }
 
   function addToggleEvent(element) {
-    element.addEventListener("click", toggleModal);
+    element.addEventListener("click", toggleBuyModal);
   }
 })();
