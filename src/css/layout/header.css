@@ -124,3 +124,141 @@
         display: none;
     }
 }
+/*--mobile-menu--*/
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 220px;
+    max-height: 100%;
+    z-index: 100;
+    background-color: var(--dark-background-color);
+    transform: translateX(100%);
+    transition: transform 0.5s linear;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        width: 290px;
+    }
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0%);
+}
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 812px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-container {
+        height: 1024px
+    }
+}
+
+.close-menu-burger {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background: none;
+    border: none;
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .close-menu-burger {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.icon-close-burger {
+    stroke: var(--main-color-theme-dark);
+    width: 28px;
+    height: 28px;
+    stroke-width: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .icon-close-burger {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.mobile-header-list {
+    margin-top: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.mobile-header-item {
+    position: relative;
+}
+
+.mobile-header-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-header-link {
+    color: var(--main-color-theme-dark);
+    transition: color var(--transition-hover);
+}
+
+.mobile-header-text {
+    color: var(--main-color-theme-dark);
+    font-weight: 500;
+    line-height: 1.42;
+    letter-spacing: -0.02em;
+}
+
+.mobile-header-text:hover,
+.mobile-header-text:focus {
+    color: var(--hover-color-dark);
+}
+
+.mobile-social-list {
+    display: flex;
+    gap: 18px;
+}
+
+.mobile-social-item {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    padding: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-social-item {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.social-mobile-icon {
+    width: 100%;
+    height: 100%;
+    stroke: var(--main-color-theme-dark);
+    stroke-width: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    .social-mobile-icon {
+        stroke-width: 2.5px;
+    }
+}
+
+.social-mobile-icon:hover,
+.social-mobile-link:focus>.social-mobile-icon {
+    stroke: var(--hover-color-dark);
+}
