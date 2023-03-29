@@ -1,4 +1,4 @@
-<!--   rewiews section  -->
+<!--   Rewiews section  -->
 <section class="rewiews" id="chocolate-is-loved">
   <div class="container">
     <h2 class="section-title for-rewiews">
@@ -89,18 +89,17 @@
       <li>
         <button
           type="button"
-          class="slider-btn active-slider-btn"
-          rewiew-slider-btn
+          class="slider-btn active-slider-btn rewiew-slider-btn"
         ></button>
       </li>
       <li>
-        <button type="button" class="slider-btn" rewiew-slider-btn></button>
+        <button type="button" class="slider-btn rewiew-slider-btn"></button>
       </li>
       <li>
-        <button type="button" class="slider-btn" rewiew-slider-btn></button>
+        <button type="button" class="slider-btn rewiew-slider-btn"></button>
       </li>
       <li>
-        <button type="button" class="slider-btn" rewiew-slider-btn></button>
+        <button type="button" class="slider-btn rewiew-slider-btn"></button>
       </li>
     </ul>
     <button type="submit" class="review-btn" data-modal-open-rewiews>
@@ -117,11 +116,15 @@
         </svg>
       </button>
       <h3 class="rewiew-form-title">
-        Leave your contacts and we will call you back
+        LEAVE A REVIEW ABOUT <span class="accent"> OUR CHOCOLATE</span>
       </h3>
-      <form class="rewiew-form" name="contact-form" autocomplete="off">
+      <form
+        class="rewiew-form"
+        name="contact-form"
+        autocomplete="off"
+        novalidate
+      >
         <div class="rewiew-form-field">
-          <label class="rewiew-form-label" for="user-name">Name</label>
           <input
             class="rewiew-form-input"
             type="text"
@@ -132,7 +135,6 @@
         </div>
 
         <div class="rewiew-form-field">
-          <label class="rewiew-form-label" for="user-email">Email</label>
           <input
             class="rewiew-form-input"
             type="email"
@@ -142,10 +144,13 @@
           />
         </div>
 
-        <div class="rewiew-form-field">
-          <label class="rewiew-form-label" for="user-phone">+380</label>
+        <div class="rewiew-form-field phone-number">
+          <svg class="icon-phone">
+            <use href="/img/hero/icons.svg#icon-ukraine">+380</use>
+          </svg>
+          <span class="phone-kod">+380</span>
           <input
-            class="rewiew-form-input"
+            class="rewiew-form-input for-phone"
             type="tel"
             name="user-phone"
             id="user-phone"
@@ -162,20 +167,31 @@
             name="user-message"
             id="user-message"
             placeholder="Enter text"
+            required
           ></textarea>
         </div>
 
-        <button class="rewiew-form-button" type="submit">Send</button>
+        <button class="rewiew-form-button" type="button" button-rewiews-send>
+          Send
+        </button>
       </form>
     </div>
+  </div>
+  <div class="backdrop-rewiews is-hidden" rewiews-thankyou>
     <div class="rewiews-modal-popup">
-      <button class="modal-close" type="button" data-modal-close-rewiews>
+      <button
+        class="modal-close"
+        type="button"
+        data-modal-close-rewiews-thankyou
+      >
         <svg class="modal-button-icon">
           <use href="/img/hero/icons.svg#icon-cross"></use>
         </svg>
       </button>
-      <h3 class="rewiew-popup-title">thank you for your feedback!</h3>
-      <p class="rewiew-popup-text">We are so happy to hear from you!</p>
+      <div clas="rewiews-modal-popup-description">
+        <h3 class="rewiew-popup-title">thank you for your feedback!</h3>
+        <p class="rewiew-popup-text">We are so happy to hear from you!</p>
+      </div>
     </div>
   </div>
 </section>

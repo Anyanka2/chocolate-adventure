@@ -33,6 +33,7 @@
     </button>
     <form class="form-buy" name="buy-now" autocomplete="on" novalidate>
       <h2 class="title-modal"><samp class="title-buy">Buy</samp> now</h2>
+
       <ul class="change-product">
         <li class="list-product">
           <img
@@ -47,6 +48,7 @@
           />
           <button class="mass-ch" type="button">100 g</button>
         </li>
+
         <li class="list-product">
           <img
             class="product"
@@ -60,6 +62,7 @@
           />
           <button class="mass-ch" type="button">200 g</button>
         </li>
+
         <li class="list-product">
           <img
             class="product"
@@ -142,7 +145,26 @@
           required
         ></textarea>
       </div>
-      <button class="hero-button-buy" type="submit">Submit</button>
+      <button class="hero-button-buy" hero-button-buy-submit type="button">
+        Submit
+      </button>
     </form>
+  </div>
+</div>
+<div class="backdrop-buy is-hidden" top-sellers-thankyou>
+  <div class="rewiews-modal-popup-buy">
+    <button class="modal-close" type="button" data-modal-close-thankyou>
+      <svg class="close">
+        <use href="/img/hero/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="rewiew-popup-info">
+      <h3 class="rewiew-popup-title-buy">thank you!</h3>
+      <p class="rewiew-popup-text-buy">
+        We are glad that you ordered our chocolate and we are giving you a
+        <samp class="discount">20%</samp>
+        discount on all our products.
+      </p>
+    </div>
   </div>
 </div>
