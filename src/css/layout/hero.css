@@ -258,7 +258,7 @@
   transition: transform 500ms;
   font-family: var(--main-font-family);
 }
-.modal-close {
+.modal-close-buy {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -269,7 +269,7 @@
   padding: 0;
   width: 28px;
   height: 28px;
-  background-color: transparent;
+  background-color: #fafafa;
   border: none;
   transition: fill var(--transition-hover);
 }
