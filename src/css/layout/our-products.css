@@ -53,6 +53,8 @@
 
 
 
+
+
 @media screen and (min-width:768px) and (max-width:1199px) {
     .slider-list-div {
         transform: translate(calc(100%/8), 0);
@@ -93,7 +95,7 @@
 }
 
 .slider-list-element img {
-    max-width: none;
+    max-width: 230px;
     margin-bottom: 8px;
 }
 
@@ -177,4 +179,23 @@
     .slider-btn:hover {
         transform: scale(1.6);
     }
+}
+
+@media screen and (max-width: 374px) {
+    .slider-list-div {
+        padding-left: calc(100%/11);
+    }
+
+    .slider-list {
+
+        gap: 100px;
+        margin-bottom: 12px;
+    }
+
+    .slider-list-element {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+
 }

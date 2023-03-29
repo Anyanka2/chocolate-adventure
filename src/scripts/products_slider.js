@@ -52,12 +52,17 @@ function moveTo() {
 
 
 function main() {
-    if (document.documentElement.clientWidth < 768) {
+    if (document.documentElement.clientWidth < 375) {
+        move = -332;
+        
+    }
+    else if (document.documentElement.clientWidth < 768) {
         move = -359;
     }
     else {
         move = -288;
     }
+   // console.log(move);
     switch (current_btn) {
         case 0:
             defaultPosition();
