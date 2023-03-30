@@ -118,6 +118,9 @@
     overflow: hidden;
     cursor: pointer;
     width: 100%;
+    max-width: 335px;
+   
+    /* box-sizing: border-box; */
     
 }
 
@@ -154,8 +157,8 @@
 
 .play-btn {
     position: absolute;
-    top: 233px;
-    right: 150px;
+    top: 45%;
+    right: 45%;
     width: 35px;
     height: 35px;
     z-index: 3;
@@ -209,4 +212,8 @@
     width: 20px;
     height: 21px;
     }
+}
+
+.how-img {
+    height: 100%;
 }
