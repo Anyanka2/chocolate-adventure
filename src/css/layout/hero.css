@@ -115,6 +115,7 @@
     width: 484px;
     padding-top: 381px;
     padding-left: 20px;
+    padding-right: 0;
   }
 }
 @media (max-width: 375px) {
