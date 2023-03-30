@@ -115,6 +115,7 @@
     width: 484px;
     padding-top: 381px;
     padding-left: 20px;
+    padding-right: 0;
   }
 }
 @media (max-width: 375px) {
@@ -294,9 +295,12 @@
   transition: fill var(--transition-hover);
 }
 .modal-close-buy:hover {
+  fill: #f16529;
+}
+.modal-close-buy-pop:hover {
   background-color: #f16529;
 }
-.modal-close-buy:hover .close-pop-up-buy {
+.modal-close-buy-pop:hover .close-pop-up-buy {
   background-color: #f16529;
   fill: #fafafa;
 }
