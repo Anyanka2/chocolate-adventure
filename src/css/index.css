@@ -1,50 +1,7 @@
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Montserrat'),
-    url('/src/fonts/Montserrat-Regular.woff2') format(woff2),
-    url('/src/fonts/Montserrat-Regular.woff') format(woff);
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: medium;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Montserrat'),
-    url('/src/fonts/Montserrat-Medium.woff2') format(woff2),
-    url('/src/fonts/Montserrat-Medium.woff') format(woff);
-}
-@font-face {
-    font-family: 'Montserrat';
-    font-style: semi bold;
-    font-weight: 600;
-    font-display: swap;
-    src: local('Montserrat'),
-        url('/src/fonts/Montserrat-SemiBold.woff2') format(woff2),
-        url('/src/fonts/Montserrat-SemiBold.woff') format(woff);
-}
-@font-face {
-    font-family: 'Montserrat';
-    font-style: bold;
-    font-weight: 700;
-    font-display: swap;
-    src: local('Montserrat'),
-        url('/src/fonts/Montserrat-Bold.woff2') format(woff2),
-        url('/src/fonts/Montserrat-Bold.woff') format(woff);
-}
-@font-face {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 700;
-    font-display: swap;
-    src: local('Montserrat'),
-        url('/src/fonts/Montserrat-BoldItalic.woff2') format(woff2),
-        url('/src/fonts/Montserrat-BoldItalic.woff') format(woff);
-}
+
 
 /*base*/
+@import url('./base/fonts.css');
 @import url('./base/normalize.css');
 @import url('./base/reset.css');
 @import url('./base/roots.css');
@@ -65,3 +22,4 @@
 @import url('./layout/rewiews.css');
 @import url('./layout/subscribe.css');
 @import url('./layout/footer.css');
+
