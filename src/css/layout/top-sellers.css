@@ -25,6 +25,8 @@
 
 .top-sellers-img {
   transition: transform var(--transition-hover);
+  max-width: 335px;
+  max-height: 464px;
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -32,9 +34,17 @@
 .top-sellers-item-desk {
   display: none;
 }
+@media (min-width: 768px) {
+  .top-sellers-img {
+    width: 344px;
+    height: 464px;
+  }
+}
 @media (min-width: 1200px) {
   .top-sellers-item-desk {
     display: block;
+    width: 368px;
+    height: 464px;
   }
 }
 .top-sellers-bottom {
