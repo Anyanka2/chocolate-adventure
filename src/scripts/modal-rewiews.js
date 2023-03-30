@@ -3,9 +3,9 @@
     openRewModalBtns: document.querySelectorAll("[data-modal-open-rewiews]"),
     closeRewModalBtn: document.querySelector("[data-modal-close-rewiews]"),
     closeModalRewThankBtn: document.querySelector("[data-modal-close-rewiews-thankyou]"),
-    sendRewBtn: document.querySelector("[button-rewiews-send]"),
+    sendRewBtn: document.querySelector("[data-button-rewiews-send]"),
     rewModal: document.querySelector("[data-modal-rewiews]"),
-    rewThankModal: document.querySelector("[rewiews-thankyou]")
+    rewThankModal: document.querySelector("[data-rewiews-thankyou]")
   };
 
   refs.openRewModalBtns.forEach(addToggleEvent);

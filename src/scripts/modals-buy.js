@@ -3,9 +3,9 @@
     openBuyModalBtns: document.querySelectorAll("[data-modal-open-buy]"),
     closeBuyModalBtn: document.querySelector("[data-modal-close-buy]"),
     closeModalThankBtn: document.querySelector("[data-modal-close-thankyou]"),
-    submitBuyBtn: document.querySelector("[hero-button-buy-submit]"),
-    buyModal: document.querySelector("[data-moda-buy]"),
-    thankModal: document.querySelector("[top-sellers-thankyou]")
+    submitBuyBtn: document.querySelector("[data-hero-button-buy-submit]"),
+    buyModal: document.querySelector("[data-modal-buy]"),
+    thankModal: document.querySelector("[data-top-sellers-thankyou]")
   };
 
   refs.openBuyModalBtns.forEach(addToggleEvent);
