@@ -81,13 +81,13 @@ color: var(--main-color-theme-dark);
     margin-left: auto;
     font-weight: 400;
 font-size: 14px;
-line-height: 1.29;
+line-height: 1.28;
 letter-spacing: -0.02em;
 }
 
 @media screen and (max-width: 767px) {
     .subscribe-subtitle{
-width: 326px;
+width: 320px;
     }
 }
 
