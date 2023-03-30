@@ -110,8 +110,8 @@
 }
 
 .front-card {
-  width: 335px;
   height: 270px;
+  border: 1px solid var(--hover-color-dark);
   border-radius: 15px;
 
   background-color: var(--main-color-theme-dark);
@@ -135,6 +135,7 @@
 
 .dark {
   background-color: var(--dark-background-color);
+  border: 0;
 }
 
 .unique-img {
