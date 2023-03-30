@@ -1,5 +1,6 @@
 
 /*base*/
+@import url('./base/normalize.css');
 @import url('./base/reset.css');
 @import url('./base/roots.css');
 
