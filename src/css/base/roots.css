@@ -1,5 +1,5 @@
 :root {
-    --main-font-family: 'Montserrat';
+    --main-font-family: 'Montserrat', sans-serif;
     --main-background-color: #E2E2E2;
     --dark-background-color: #1E1823;
     --hover-color-dark: #FD9222;
