@@ -16,7 +16,7 @@
   border-radius: 30px;
 }
 .conainer-hero-section {
-  padding-left: 20px ;
+  padding-left: 20px;
   padding-right: 20px;
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -108,6 +108,7 @@
   color: var(--main-color-theme-dark);
   padding-top: 395px;
   padding-bottom: 32px;
+  padding-right: 20px;
 }
 @media (min-width: 768px) {
   .hero-info {
@@ -116,7 +117,14 @@
     padding-left: 20px;
   }
 }
-
+@media (max-width: 375px) {
+  .hero-info {
+    width: 250px;
+    padding: 0;
+    padding-top: 381px;
+    padding-bottom: 32px;
+  }
+}
 .button-link-anchor {
   display: flex;
   flex-wrap: wrap;
@@ -138,6 +146,11 @@
 @media (min-width: 768px) {
   .button-link {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 375px) {
+  .button-link {
+    flex-wrap: wrap;
   }
 }
 .hero-button-buy {
@@ -575,24 +588,25 @@ textarea:focus,
   transform: translateX(180px);
 }
 /* slider */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .slider-container-buy {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
   }
-}
+} */
 @media (max-width: 480px) {
   .slider-buy {
     width: 100%;
     max-width: 231px;
     height: 257px;
-    margin-bottom: 59px;
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
+    margin-bottom: 14px;
   }
 }
 
@@ -675,10 +689,11 @@ a.slide__next,
 @media (max-width: 480px) {
   .slider__nav {
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     bottom: 56%;
     left: 60%;
     width: 200px;
+    padding-bottom: 32px;
     margin-left: -100px;
   }
 }
@@ -696,15 +711,17 @@ a.slide__next,
 @media (max-width: 480px) {
   .slider__navlink:hover {
     transform: scale(1.6);
+    width: 28px;
+    border-radius: 15px;
+    background: #fd9222;
   }
 }
 @media (max-width: 480px) {
-  .slider__navlink:focus, 
-    .slider__navlink:active{
+  .slider__navlink:focus,
+  .slider__navlink:active {
     transform: scale(1.6);
     width: 28px;
     border-radius: 15px;
     background: #fd9222;
   }
 }
-
