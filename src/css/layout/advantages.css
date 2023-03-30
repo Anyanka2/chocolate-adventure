@@ -6,7 +6,10 @@
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    
 } 
+
+
 
 @media screen and (min-width: 768px) {
     .advantages{
@@ -14,6 +17,8 @@
         padding-bottom: 50px;
     }
 }
+
+
 
 @media screen and (min-width: 768px) {
     .advantages-set {
@@ -36,6 +41,14 @@
 .advantages-item:last-child {
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 374px) {
+    .advantages-item {
+        width: 100%;
+    }
+}
+
+
 
 /* Таблетка */
 @media screen and (min-width: 768px) {
